@@ -63,8 +63,8 @@ $ gitbook pdf . slackbook_cn.pdf
 [ID_ISSUES]: https://github.com/slackwarecn/slackbook_cn/issues "提交Issues"
 [ID_PULL_REQUESTS]: https://github.com/slackwarecn/slackbook_cn/pulls "查看Pull requests"
 [ID_CHANGES]: https://github.com/slackwarecn/slackbook_cn/blob/master/Changes.md "查看修订历史"
-[ID_HTML]: https://www.gitbook.com/read/book/arondight/slackbook_cn "阅读在线HTML"
-[ID_EPUB]: https://www.gitbook.com/download/epub/book/arondight/slackbook_cn "获取EPUB"
+[ID_HTML]: https://www.gitbook.com/read/book/slackwarecn/slackbook_cn "阅读在线HTML"
+[ID_EPUB]: https://www.gitbook.com/download/epub/book/slackwarecn/slackbook_cn "获取EPUB"
 [ID_RELEASES]: https://github.com/slackwarecn/slackbook_cn/releases "查看已发布文档"
 [ID_CALIBRE]: https://github.com/kovidgoyal/calibre/releases "点此获取Calibre"
 
