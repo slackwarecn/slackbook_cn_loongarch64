@@ -2,7 +2,7 @@
   "pdf": {
     "toc": true,
     "pageNumbers": true,
-    "fontSize": 16,
+    "fontSize": 14,
     "paperSize": "a4",
     "margin": {
       "right": 62,

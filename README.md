@@ -1,8 +1,8 @@
-## 翻译说明
+## Slackware中文手册
 
 ### 关于本书
 
-这里是[Slackbook][ID_SLACKBOOK] 的中文版。
+本书是[Slackbook][ID_SLACKBOOK] 的中文版。
 
 ### 修订历史
 

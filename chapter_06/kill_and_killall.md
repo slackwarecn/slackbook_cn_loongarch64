@@ -1,0 +1,2 @@
+### Kill和Killall
+
