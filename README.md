@@ -2,19 +2,31 @@
 
 ### 关于本书
 
-本书是[Slackbook][ID_SLACKBOOK] 的中文版。
+本书是[Slackbook][ID_SLACKBOOK] 的中文版，项目托管于[Github][ID_GITHUB]。
 
 ### 修订历史
 
 你可以在[这里][ID_CHANGES]查看该文档的修订历史。
 
+### 获取文档
+
++ [在线阅读][ID_HTML]
++ [发布页面][ID_RELEASES]
+
+### 本地编译
+
+```shell
+$ git clone https://github.com/slackwarecn/slackbook_cn
+$ cd slackbook_cn
+$ gitbook build . slackbook_cn
+$ gitbook pdf . slackbook_cn.pdf
+$ gitbook epub . slackbook_cn.epub
+$ gitbook mobi . slackbook_cn.mobi
+```
+
+> 使用GitBook 本地编译需要安装[Calibre][ID_CALIBRE] 以提供EPUB 和PDF 的转换工具。
+
 ### 贡献力量
-
-#### 贡献者列表
-
-| 贡献者 | 章节 |
-| --- | --- |
-| [Arondight](https://github.com/Arondight) | 目录翻译和GitBook 翻译框架建立 |
 
 #### 参与翻译
 
@@ -34,29 +46,35 @@ $ cd slackbook
 $ make
 ```
 
-### 获取文档
+或者你可以在[**这里**](http://slackbook.org/beta)在线查看原始文档。
 
-#### 实时文档
+#### 贡献者列表
 
-+ [在线阅读][ID_HTML]
-+ [离线阅读][ID_EPUB]
+| 内容 | 贡献者 |
+| --- | --- |
+| 翻译框架 | [Arondight][ID_NAME_Arondight] |
+| 前言 | |
+| 第一章 | |
+| 第二章 | |
+| 第三章 | |
+| 第四章 | |
+| 第五章 | |
+| 第六章 | |
+| 第七章 | |
+| 第八章 | |
+| 第九章 | |
+| 第十章 | |
+| 第十一章 | |
+| 第十二章 | [Arondight][ID_NAME_Arondight] |
+| 第十三章 | |
+| 第十四章 | |
+| 第十五章 | |
+| 第十六章 | |
+| 第十七章 | |
+| 第十八章 | |
+| 第十九章 | |
 
-#### 已发布文档
-
-+ [发布页面][ID_RELEASES]
-
-### 本地编译
-
-```shell
-$ git clone https://github.com/slackwarecn/slackbook_cn
-$ cd slackbook_cn
-$ gitbook build . slackbook_cn
-$ gitbook epub . slackbook_cn.epub
-$ gitbook pdf . slackbook_cn.pdf
-```
-
-> 使用GitBook 本地编译需要安装[Calibre][ID_CALIBRE] 以提供EPUB 和PDF 的转换工具。
-
+[ID_GITHUB]: https://github.com/slackwarecn/slackbook_cn "访问项目主页"
 [ID_SLACKWARECN]: https://github.com/slackwarecn "访问The Slackware Linux CN Community"
 [ID_JOINUS]: http://slackwarecn.github.io/JoinUs "加入我们！"
 [ID_SLACKBOOK]: http://slackbook.org "访问The Revised Slackware Book Project 主页"
@@ -67,4 +85,5 @@ $ gitbook pdf . slackbook_cn.pdf
 [ID_EPUB]: https://www.gitbook.com/download/epub/book/slackwarecn/slackbook_cn "获取EPUB"
 [ID_RELEASES]: https://github.com/slackwarecn/slackbook_cn/releases "查看已发布文档"
 [ID_CALIBRE]: https://github.com/kovidgoyal/calibre/releases "点此获取Calibre"
+[ID_NAME_Arondight]: https://github.com/Arondight
 
