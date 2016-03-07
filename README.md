@@ -15,7 +15,7 @@
 
 ### 本地编译
 
-```shell
+```
 $ git clone https://github.com/slackwarecn/slackbook_cn
 $ cd slackbook_cn
 $ gitbook build . slackbook_cn
@@ -40,7 +40,7 @@ $ gitbook mobi . slackbook_cn.mobi
 
 你可以通过如下指令获得原始文档：
 
-```bash
+```
 $ git clone git://slackbook.org/slackbook.git
 $ cd slackbook
 $ make
@@ -53,8 +53,8 @@ $ make
 | 内容 | 贡献者 |
 | --- | --- |
 | 翻译框架 | [Arondight][ID_NAME_Arondight] |
-| 前言 | |
-| 第一章 | |
+| 前言 | [zhuduiyou][ID_NAME_ZHUDUIYOU] |
+| 第一章 | [zhuduiyou][ID_NAME_ZHUDUIYOU] |
 | 第二章 | |
 | 第三章 | |
 | 第四章 | |
@@ -86,4 +86,5 @@ $ make
 [ID_RELEASES]: https://github.com/slackwarecn/slackbook_cn/releases "查看已发布文档"
 [ID_CALIBRE]: https://github.com/kovidgoyal/calibre/releases "点此获取Calibre"
 [ID_NAME_Arondight]: https://github.com/Arondight
+[ID_NAME_ZHUDUIYOU]: https://github.com/zhuduiyou
 
