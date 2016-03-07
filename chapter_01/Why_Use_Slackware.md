@@ -1,6 +1,8 @@
 ### 为何使用Slackware？
-Slackware历史悠久且优秀，它始于1992年，在1993年首次发布。Slackware是现存最古老的商业Linux发行版。Slackware致力于成为一个简单整洁的Linux发行版并尽可能的向UNIX靠拢，这这使它非常适合想学习Linux或其他类UNIX系统的人。在2012年的一次访问中，Slackware创始人Patrick Volkerding这样说。
+
+Slackware历史悠久且优秀，它始于1992年，在1993年首次发布。Slackware是现存最古老的商业Linux发行版。Slackware致力于成为一个简单整洁的Linux发行版并尽可能的向UNIX靠拢，这使它非常适合想学习Linux或其他类UNIX系统的人。在2012年的一次访问中，Slackware创始人Patrick Volkerding这样说。
 
 “为了使事情有所不同，我试着把它们分开。离开了一段时间又回到Slackware的人们会高兴的发现他们不需要重新学习做任何事。这一点吸引了很多忠实的追随者，我非常感激他们。”
 
 Slackware的简单使它同样适合想要创造自己的操作系统的用户。当然，Slackware本身就非常不错了，不管是作为桌面，工作站，还是服务器。
+
