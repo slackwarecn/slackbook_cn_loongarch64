@@ -1,6 +1,7 @@
 # 目录
 
 + [翻译说明](README.md)
+  * [贡献力量](CONTRIBUTE.md)
 + [前言](preface/README.md)
   * [目标读者](preface/Intended_Audience.md)
   * [为什么会有一版新的Slackware手册？](preface/Why_A_New_Slackware_Book.md)
