@@ -52,11 +52,11 @@ $ make
 
 | 内容 | 贡献者 |
 | --- | --- |
-| 翻译框架 | [Arondight][ID_NAME_Arondight] |
+| 翻译框架 | [Arondight][ID_NAME_ARONDIGHT] |
 | 前言 | [zhuduiyou][ID_NAME_ZHUDUIYOU] |
 | 第一章 | [zhuduiyou][ID_NAME_ZHUDUIYOU] |
-| 第二章 | |
-| 第三章 | |
+| 第二章 | [liandesinian][ID_NAME_LIANDESINIAN] |
+| 第三章 | [unnamed42][ID_NAME_UNNAMED42] |
 | 第四章 | |
 | 第五章 | |
 | 第六章 | |
@@ -65,14 +65,14 @@ $ make
 | 第九章 | |
 | 第十章 | |
 | 第十一章 | |
-| 第十二章 | [Arondight][ID_NAME_Arondight] |
+| 第十二章 | [Arondight][ID_NAME_ARONDIGHT] |
 | 第十三章 | |
 | 第十四章 | |
 | 第十五章 | |
 | 第十六章 | |
 | 第十七章 | |
-| 第十八章 | |
-| 第十九章 | |
+| 第十八章 | [Arondight][ID_NAME_ARONDIGHT] [zha0300][ID_NAME_ZHA0300] |
+| 第十九章 | [coolrc136][ID_NAME_COOLRC136] |
 
 [ID_GITHUB]: https://github.com/slackwarecn/slackbook_cn "访问项目主页"
 [ID_SLACKWARECN]: https://github.com/slackwarecn "访问The Slackware Linux CN Community"
@@ -85,6 +85,11 @@ $ make
 [ID_EPUB]: https://www.gitbook.com/download/epub/book/slackwarecn/slackbook_cn "获取EPUB"
 [ID_RELEASES]: https://github.com/slackwarecn/slackbook_cn/releases "查看已发布文档"
 [ID_CALIBRE]: https://github.com/kovidgoyal/calibre/releases "点此获取Calibre"
-[ID_NAME_Arondight]: https://github.com/Arondight
+
+[ID_NAME_ARONDIGHT]: https://github.com/Arondight
 [ID_NAME_ZHUDUIYOU]: https://github.com/zhuduiyou
+[ID_NAME_COOLRC136]: https://github.com/coolrc136
+[ID_NAME_UNNAMED42]: https://github.com/unnamed42
+[ID_NAME_LIANDESINIAN]: https://github.com/liandesinian
+[ID_NAME_ZHA0300]: https://github.com/zha0300
 
