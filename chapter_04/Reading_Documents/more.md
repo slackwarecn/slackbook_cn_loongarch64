@@ -5,5 +5,5 @@
 这是对`cat`的一次重大改进，但依然有一些缺点：`more`不能回滚，搜索功能不能高亮搜索到的关键词，不能横向滚动，等等。我们急需一个解决方案。
 
 <div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">注意</h3><p>
-    实际上，现代版本的more, 比如Slackware附带的，确实有一个*返回*功能（按**b**键），但只支持`more`直接打开文件的方式，`more`通过管道打开的文件是不支持的。
+    实际上，现代版本的<code>more</code>, 比如Slackware附带的，确实有一个<i>返回</i>功能（输入<strong>b</strong>键），但只支持<code>more</code>直接打开文件的方式，<code>more</code>通过管道打开的文件是不支持的。
   </p></div>
