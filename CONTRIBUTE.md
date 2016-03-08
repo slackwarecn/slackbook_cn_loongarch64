@@ -2,7 +2,7 @@
 
 #### 参与翻译
 
-你有三种方式可以参与Slackbook 中文版的翻译。
+你有三种方式可以参与Slackbook中文版的翻译。
 
 1. 提交[Issues][ID_ISSUES]，适合单处的翻译错误。
 2. 提交[Pull Requests][ID_PULL_REQUESTS]，适合较多翻译内容提交。
@@ -28,9 +28,38 @@ $ make
 
 我会尽快把项目的翻译状态更新到[项目翻译工作进展](https://github.com/slackwarecn/slackbook_cn/issues/2)页面。
 
-##### Fork项目
+##### Pull Requests 流程
 
-在 GitHub 上 `fork` 到自己的仓库，然后 `clone` 到本地，并设置用户信息。
+###### Fork项目
+
+在GitHub上`fork`到自己的仓库，然后`clone`到本地，并设置用户信息。
+
+```
+$ git clone https://github.com/<Your_Github_ID>/slackbook_cn.git
+$ cd slackbook_cn
+$ git config user.name "id"
+$ git config user.email "email"
+```
+
+###### 修改并提交翻译
+
+做修改后提交，推送到自己的仓库，并在Commit中关闭你提的Issue。
+
+```
+$ git add .
+$ git commit -am "Fix issue #n 该章节翻译已经完成 "
+$ git push origin master
+```
+
+###### 发起Pull Request
+
+现在你可以在你的Github 项目页面上发起[pull request][ID_PULL_REQUESTS]。
+
+##### 组织内翻译提交流程
+
+###### Clone 项目
+
+首先你需要`clone`项目到本地。
 
 ```
 $ git clone https://github.com/slackwarecn/slackbook_cn.git
@@ -39,9 +68,9 @@ $ git config user.name "id"
 $ git config user.email "email"
 ```
 
-##### 修改并提交翻译
+###### 进行翻译并提交
 
-做修改后提交，并推送到自己的仓库。
+做修改后提交，推送到仓库，并在Commit中关闭你提的Issue。
 
 ```
 $ git add .
@@ -49,18 +78,33 @@ $ git commit -am "Fix issue #n 该章节翻译已经完成 "
 $ git push origin master
 ```
 
-##### 发起Pull Request
-
-现在你可以在你的Github 项目页面上发起[pull request][ID_PULL_REQUESTS]。
+##### 定时更新本地仓库
 
 除此之外，你需要定期使用项目仓库内容更新自己仓库内容。
 
+###### 更新Fork的项目
+
+首先你需要为上游添加一个别名。
+
 ```
 $ git remote add upstream https://github.com/slackwarecn/slackbook_cn.git
+```
+
+然后定期更新本地仓库。
+
+```
 $ git fetch upstream
 $ git checkout master
 $ git rebase upstream/master
 $ git push -f origin master
+```
+
+###### 更新上游项目
+
+如果你直接从上游`clone`下来的项目，只需要简单更新本地仓库即可。
+
+```
+$ git pull origin master
 ```
 
 #### 贡献者列表
