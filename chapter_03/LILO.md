@@ -34,4 +34,37 @@ vga = 773
 
 首先应该注意的就是"boot"一行。它决定引导器安装位置。要安装到MBR上的话，填上对应硬盘设备条目就好。在上面的例子中，我所用的SATA硬盘显示为SCSI设备`/dev/sda`. 要安装到分区的引导区块中，还得附加上分区设备条目。比如，要安装到电脑唯一的SATA硬盘的第一个分区上，就该写`/dev/sda1`.
 
-"prompt"选项让LILO询问你该引导哪一个系统。每个操作系统都在lilo配置文件的后半部分列出（这一内容将在后文中探讨）。timeout选项告诉LILO启动默认操作系统前的等待时长（单位：0.1秒）。在上面的例子中是5秒。有些系统显示启动屏幕需要很长时间，这时候就需要设置个大点的timeout. 
+"prompt"选项让LILO询问你该引导哪一个系统。每个操作系统都在lilo配置文件的后半部分列出（这一内容将在后文中探讨）。timeout选项告诉LILO启动默认操作系统前的等待时长（单位：0.1秒）。在上面的例子中是5秒。有些系统显示启动屏幕需要很长时间，这时候就需要设置个大点的timeout. 这就是为什么简单的LILO安装方法设置了很长的timeout（有时甚至长达2分钟）。上面的例子中，append那一行由liloconfig自动配置。你能（并且应该）在自己的`/etc/lilo.conf`看到类似的内容。在此不会深入探讨为什么需要这一行，你只需要记住有这一行比没有好就行了。:^)
+
+接下来看看操作系统部分。每个Linux操作系统的配置以"image"配置行开头。Microsoft Windows操作系统以"other"配置行开头。现在让我们来看看Slackware和Windows各自的配置样例。
+
+```fundamental
+# LILO configuration file
+... global section ommitted ....
+# Linux bootable partition config begins
+image = /boot/vmlinuz-generic-2.6.29.4
+  root = /dev/sda1
+  initrd = /boot/initrd.gz
+  label = Slackware64
+  read-only
+# Linux bootable partition config ends
+# Windows bootable partition config begins
+other = /dev/sda3
+  label = Windows
+  table = /dev/sda
+# Windows bootable partition config ends
+```
+
+对于像Slackware这样的Linux操作系统，image配置项规定了要启动的内核。在这个例子中，要启动的内核是`/boot/vmlinuz-generic-2.6.29.4`. 其余的几个配置项看名字就可知道作用：它们告诉LILO根分区的位置，使用哪个initrd文件，把根文件系统挂载为只读。initrd配置项对于那些使用通用内核，或使用LVM和软件RAID的人十分重要。它告诉LILO(以及内核)在哪找到使用mkinitrd创建的initrd.
+
+配置好`/etc/lilo.conf`后，运行`lilo(8)`来安装。不像GRUB和其他引导器那样，在更改配置文件之后需要重新运行lilo, 不然新修改的引导器镜像不会被安装，所做出的修改不会生效。
+
+```Shell
+darkstar:~# lilo
+Warning: LBA32 addressing assumed
+Added Slackware *
+Added Backup
+6 warnings were issued.
+```
+
+看见这些警告不必太惊慌，这些并不代表lilo出了问题，除非发现了致命错误。另外，LBA32 addressing 的警告是常有的事。
