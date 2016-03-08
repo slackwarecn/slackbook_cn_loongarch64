@@ -1,2 +1,8 @@
 ### pkgtool
 
+最简单的软件包维护方法就是使用pkgtool(8)，它为其他一些工具提供了一个菜单界面。 `pkgtool` 可以安装或移除软件包，查看软件包内容，列出当前已安装的软件包，这些操作都在一个对用户友好的ncurses界面中进行。
+
+![pkgtool](http://slackbook.org/beta/png/pkgtool.png)
+
+基本的软件包维护工作都可以方便的用 `pkgtool` 完成，高级点的则需要用到更灵活的工具。
+
