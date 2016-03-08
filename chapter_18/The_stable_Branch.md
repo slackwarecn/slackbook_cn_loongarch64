@@ -1,29 +1,26 @@
 ### 稳定分支
 
+#### slackware的稳定分支
 
-# slackware的稳定分支
+每当slackware发布新版本，Slackware的团队会按需发布升级包用以修复严重的安全问题和惹人厌的漏洞。因此让你当前版本的Slackware跟进最新的补丁是非常重要的，这种版本被称之为-stable分支。与之不同的还有一个-current分支，我们会在这个分支上进行下一个稳定版本的开发工作（所以经常会有一些引发问题的提交）。除非你愿意在一个可能出错的系统中工作并可以自食其力地解决这些问题。我们强烈建议你使用-stable分支。
 
-每当slackware发布一个新版本后，Slackware的团队会根据需要，
-来发布升级包修正严重的安全漏洞，特别是
-那些让人蛋疼的bug。所以你需要打上所有的更新补丁,这很重要. 
-这是被称为-STABLE的分支。还有一个
--CURRENT的分支，这就是我们做我们的开发中的版本,所有的新特性和更新会放在
-下一个稳定的版本中（所有会有意想不到的改变），但除非你
-愿意与一个可能随时出现错误的系统中工作的，并能自己解决这些错误的话.
-我们强烈建议您坚持使用-stable分支。
+由于本地无法获得-stable分支的安全更新，所以你需要从互联网上自行获取。许多个人和组织提供Slackware的镜像站，你可以在这些地方以多种方式下载到Slackware的完整目录树（也可能只是patches/目录）。有些镜像站可以在网页上访问，但更常见的方式是从运行着ftp/rsync服务器的镜像站上获取更新。Slackware项目维护着一份按照国家分类的已知镜像站清单。如果你不确定该使用哪个镜像站，可以查看[http://www.slackware.com/getslack/](http://www.slackware.com/getslack/)获得帮助。如果你附近有一所大学，他们很可能会提供一份维护着许多开源项目的镜像站——Slackware可能也在其中。一个镜像站可用的必要条件只有一个——它是官方镜像站的一个完整克隆。通常来说，最好使用距离你较近的镜像站以获得最快的访问速度和最少的网络资源占用。
 
-由于稳定版更新不会在磁盘上获得，你可以用不同的方法来下载slackware
-从互联网,你的好基友和镜像站中获得，从中可以下载整个Slackware的树目录（或仅补丁/目录）中。
-虽然有些镜像提供Web访问，最床用的方法是是通过FTP和rsync的服务器来获得更新。 
-Slackware的项目维持着一些有名的镜像站（按国家分类）。如果你不确定有哪些
-  镜像站可以使用使用，你可以通过查询 http://www.slackware.com/getslack/。
-如果你附近有大学，这是一个很好的机会，
-   他们为大量的开源系统提供支持，而Slackware就有可能在里面。使用镜像站的唯一需求是，
-它提供的包必须是完整的;
-   你最好使用最近的镜像站, 因为你会获得最快的下载速度 和使用最少的互联网资源。
+那么如何知道有可用更新呢？最好的方法是在任意提供及时更新的镜像站上查看ChangeLog.txt文件。你可以在Slackware官网上获得-stable和-current分支的更新日志。但是如果你正在使用一个较旧版本的Slackware，你需要从镜像站上查询是否有可用的更新。
 
-那么，你如何知道什么时候有更新？最好的办法是咨询Slackware项目的网页的 这同时包括了
-current和stable分支.
-ChangeLog.txt 里面有啥最新镜像站,而且你也能找到最新的更新日志
+```
+darkstar:~# wget -O - \
+ftp://slackware.osuosl.org/pub/slackware/slackware64-current/ChangeLog.txt \
+| less
+Thu Aug 16 04:01:31 UTC 2012
+Getting close!  Hopefully we've cleared out most of the remaining issues
+and are nearly ready here.  We'll call this release candidate 2.
+Unless there's a very good rationale, versions are frozen.
+Any reports of remaining bugs will be gladly taken, though.
+  #include <more/cowbell.h>
+a/aaa_base-14.0-x86_64-4.txz:  Rebuilt.
+  Remove mention of HAL in the initial welcome email (mention udisks2
+  instead).  Thanks to Dave Margell.
+a/bash-4.2.037-x86_64-1.txz:  Upgraded.
+```
 
-但是 如果你正在运行旧版本的Slackware，你需要到镜像站检查一下.
