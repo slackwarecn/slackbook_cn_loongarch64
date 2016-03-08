@@ -2,14 +2,14 @@
 
 一旦所有的软件包都安装完就快接近结束了。在这一步，Slackware会让你对新的操作系统进行配置。大多数都是可选的，不过大多数用户都需要在这里设置某些东西。取决于你安装的软件包，你可能看到的配置选项和这里不同，我们会包含一些重要的讲。
 
-首先可能会让你制作一个启动盘。过去一般使用1.44MB的软盘，但是如今Linux内核对软盘来说太大了，所以Slackware提供制作一个USB启动盘。当然这也需要你的计算机支持从USB启动。如果你并不打算使用LILO或者其他引导方式，你应该考虑制作一个USB启动盘。请注意这会清除USB上的数据。![](http://7xn66o.com1.z0.glb.clouddn.com/slackbook%2F9.png)
+首先可能会让你制作一个启动盘。过去一般使用1.44MB的软盘，但是如今Linux内核对软盘来说太大了，所以Slackware提供制作一个USB启动盘。当然这也需要你的计算机支持从USB启动。如果你并不打算使用LILO或者其他引导方式，你应该考虑制作一个USB启动盘。请注意这会清除USB上的数据。![](../../png/use-boot-stick.png)
 
 LILO用于引导Linux内核和连接initrd或是root文件系统。没有这个，Slackware系统可能不会成功引导。Slackware在这里提供一些选项。"simple"是自动配置LILO。如果你并不信任这个方法或者像详细地看一下如何配置LILO，可以选择"expert"。
 
 LILO是Slackware系统很重要的一部分，所以整个第三章就是在讲这个。如果你对LILO不理解可以先看第三章。（译者注：也可以不用LILO，用GRUB2引导）
-![](http://7xn66o.com1.z0.glb.clouddn.com/slackbook%2F10.png)
+![](../../png/setup-lilo.png)
 
-下面会让你配置并激活控制台鼠标用于图形化桌面。通过激活控制台鼠标可以方便地在Slackware的终端进行复制和粘贴操作。大部分用户都从前三个选项中进行选择。![](http://7xn66o.com1.z0.glb.clouddn.com/slackbook%2F11.png)
+下面会让你配置并激活控制台鼠标用于图形化桌面。通过激活控制台鼠标可以方便地在Slackware的终端进行复制和粘贴操作。大部分用户都从前三个选项中进行选择。![](../../png/setup-mouse.png)
 
 下面是配置网络。如果你不想配置网络可以跳过，否则就需要给计算机提供一个主机名。如果你不清楚在做什么可以先看[第十四章](../../chapter_14/README.md)
 
@@ -19,9 +19,9 @@ LILO是Slackware系统很重要的一部分，所以整个第三章就是在讲�
 
 网络配置结束后会进行启动服务的配置。如果你不确定可以使用默认配置，之后可以通过pkgtool修改。
 
-之后就是设置时间和时区。![](http://7xn66o.com1.z0.glb.clouddn.com/slackbook%2F12.png)
+之后就是设置时间和时区。![](../../png/setup-timezone.png)
 
-如果你之前选择安装X集合，可能会提示你选择一个默认的窗口管理器或者桌面环境。你在这里选择的会应用于系统上的所有用户，除非某个用于运行xwmconfig来选择一个不同的。如果你看到的选项和下面的图片不同不要惊慌。xwmconfig只提供你安装的。![](http://7xn66o.com1.z0.glb.clouddn.com/slackbook%2F13.png)
+如果你之前选择安装X集合，可能会提示你选择一个默认的窗口管理器或者桌面环境。你在这里选择的会应用于系统上的所有用户，除非某个用于运行xwmconfig来选择一个不同的。如果你看到的选项和下面的图片不同不要惊慌。xwmconfig只提供你安装的。![](../../png/setup-xwmconfig.png)
 
 最后的配置是设置root密码。root用户是Linux中的超级用户。
 

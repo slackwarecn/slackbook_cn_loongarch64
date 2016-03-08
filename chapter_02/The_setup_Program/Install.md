@@ -6,5 +6,5 @@
 
 "newbie"对new user（译者注：不知道如何翻译）来说很有用，不过会花费很长时间。这个方法会显示你之前选择的集合中的所有软件包，并且一个个地询问你是否安装。这个方法的好处是可以暂停并且给你一个软件包的简介。对于new user来说，这个简介很有用，而对于大多数用户来说却很费时和乏味。
 
-"custom"和"tagpath"只用于那些对Slackware有技术和专门只是的人。这两个选项允许用于从自定义的tagfiles中安装软件包。Tagfiles很少被用到。我们在这本书中不会讨论。![](http://7xn66o.com1.z0.glb.clouddn.com/slackbook%2F8.png)
+"custom"和"tagpath"只用于那些对Slackware有技术和专门只是的人。这两个选项允许用于从自定义的tagfiles中安装软件包。Tagfiles很少被用到。我们在这本书中不会讨论。![](../../png/setup-install.png)
 
