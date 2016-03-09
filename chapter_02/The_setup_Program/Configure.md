@@ -8,9 +8,11 @@
 
 LILO用于引导Linux内核和连接initrd或是root文件系统。没有这个，Slackware系统可能不会成功引导。Slackware在这里提供一些选项。"simple"是自动配置LILO。如果你并不信任这个方法或者像详细地看一下如何配置LILO，可以选择"expert"。
 
-LILO是Slackware系统很重要的一部分，所以整个第三章就是在讲这个。如果你对LILO不理解可以先看第三章。（译者注：也可以不用LILO，用GRUB2引导）
+LILO是Slackware系统很重要的一部分，所以整个第三章就是在讲这个。如果你对LILO不理解可以先看第三章。
 
 ![](../../png/setup-lilo.png)
+
+> 译者注：LILO只是可选的引导程序，Slackware在“A”（基本系统）软件包组中同样提供了GRUB2。
 
 下面会让你配置并激活控制台鼠标用于图形化桌面。通过激活控制台鼠标可以方便地在Slackware的终端进行复制和粘贴操作。大部分用户都从前三个选项中进行选择。
 
