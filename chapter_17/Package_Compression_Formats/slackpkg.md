@@ -20,7 +20,7 @@
 
 要使用`slackpkg`，用root权限编辑`/etc/slackpkg/mirrors`来为系统选择一个Slackware镜像站，找到和使用的Slackware版本、架构都一致的镜像站，然后取消注释就可以了。镜像列表提供了ftp和http两种访问方式，但只能取消注释一个镜像站。
 
-一旦选择了一个镜像站，就要用命令`slackpkg update`来更新远程文件的列表。如果看到有新的软件包被上传到了Slackware服务器，同样要更新远程文件的列表（通常Slackware变要记录里查看，见“[第十八章、追踪系统更新](../chapter_18/README.md)”）。
+一旦选择了一个镜像站，就要用命令`slackpkg update`来更新远程文件的列表。如果看到有新的软件包被上传到了Slackware服务器，同样要更新远程文件的列表（通常Slackware变要记录里查看，见“[第十八章、追踪系统更新](../../chapter_18/README.md)”）。
 
 要搜索一个软件包，使用命令`slackpkg search foo`，要安装一个软件包，使用命令`slackpkg install foo`。
 
