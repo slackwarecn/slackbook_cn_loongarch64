@@ -28,11 +28,11 @@ $ gitbook mobi . slackbook_cn.mobi
 
 ### 贡献力量
 
-如果你想为项目贡献你的力量，请务必事先阅读[CONTRIBUTE.md](CONTRIBUTE.md)
+如果你想为项目贡献你的力量，请务必事先阅读[CONTRIBUTING.md](CONTRIBUTING.md)
 
 [ID_GITHUB]: https://github.com/slackwarecn/slackbook_cn "访问项目主页"
 [ID_SLACKBOOK]: http://slackbook.org "访问The Revised Slackware Book Project 主页"
-[ID_CHANGES]: https://github.com/slackwarecn/slackbook_cn/blob/master/Changes.md "查看修订历史"
+[ID_CHANGES]: https://github.com/slackwarecn/slackbook_cn/blob/master/CHANGES.md "查看修订历史"
 [ID_HTML]: https://www.gitbook.com/read/book/slackwarecn/slackbook_cn "阅读在线HTML"
 [ID_EPUB]: https://www.gitbook.com/download/epub/book/slackwarecn/slackbook_cn "获取EPUB"
 [ID_RELEASES]: https://github.com/slackwarecn/slackbook_cn/releases "查看已发布文档"
