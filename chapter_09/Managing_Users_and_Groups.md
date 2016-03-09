@@ -1,21 +1,90 @@
-### 手动管理用户和组
+### 管理用户和组
 
-如同Slackware Linux其他的东西一样，用户和组信息也是存储为纯文本。这意味着你只需要编辑文本文件，就能修改用户细节，创建用户，创建家目录等。当然，你观赏如何做到这一切之后你就会发现蕴含其中的简单的美感。
+Slackware中，最简单的添加用户方式就是使用我们提供的牛逼的`adduser`脚本。`adduser`会与你交互，让你输入创建新用户所需信息，让创建用户变得简单快捷。它还会为新用户创建密码。
 
-我们的第一站是`/etc/passwd`文件。除了密码（这一点略显奇特）以外，所有用户信息都存放在这里。原因十分简单，因为`/etc/passwd`必须要让系统里所有用户都有读权限，所以尽管密码是加密过的，也不能存放在这里。让我们来瞟一眼这个文件：
+```Shell
+darkstar:~# adduser
 
-```fundamental
-alan:x:1000:100:,,,:/home/alan:/bin/bash
+Login name for new user []: david
+
+User ID ('UID') [ defaults to next available ]: 
+
+Initial group [ users ]: 
+Additional UNIX groups:
+
+Users can belong to additional UNIX groups on the system.
+For local users using graphical desktop login managers such
+as XDM/KDM, users may need to be members of additional groups
+to access the full functionality of removable media devices.
+
+* Security implications *
+Please be aware that by adding users to additional groups may
+potentially give access to the removable media of other users.
+
+If you are creating a new user for remote shell access only,
+users do not need to belong to any additional groups as standard,
+so you may press ENTER at the next prompt.
+
+Press ENTER to continue without adding any additional groups
+Or press the UP arrow to add/select/edit additional groups
+:  audio cdrom floppy plugdev video
+
+Home directory [ /home/david ] 
+
+Shell [ /bin/bash ] 
+
+Expiry date (YYYY-MM-DD) []: 
+
+New account will be created as follows:
+
+---------------------------------------
+Login name.......:  david
+UID..............:  [ Next available ]
+Initial group....:  users
+Additional groups:  audio,cdrom,floppy,plugdev,video
+Home directory...:  /home/david
+Shell............:  /bin/bash
+Expiry date......:  [ Never ]
+
+This is it... if you want to bail out, hit Control-C.  Otherwise, press
+ENTER to go ahead and make the account.
+
+
+Creating new account...
+
+
+Changing the user information for david
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Changing password for david
+Enter the new password (minimum of 5, maximum of 127 characters)
+Please use a combination of upper and lower case letters and numbers.
+New password: 
+Re-enter new password: 
+Password changed.
+
+
+Account setup complete.
 ```
 
-这个文件的每一行都包含一些由冒号区分开的区域。其含义分别为（从左到右）：用户名，密码，UID, GUID, 注解栏，家目录，shell. 你会发现每行的密码密码区都是`x`, 这是因为Slackware使用了影子口令，所以真实的加密过后的密码都存放在`/etc/shadow`. 让我们看一眼：
+在此对可选用户组做出解释。Slackware中，每个用户一定都会属于同一个组，默认情况下是`users`组。但是，一个用户还能同时从属于其他组并从中继承该组的权限。一般桌面用户还要添加进一些组来方便完成日常动作，比如播放音频，访问USB或光盘这样的可移动媒体。你只需要按下方向键上键，这里就会自动列出桌面用户应该从属的组。当然，你可以在此基础上修改。
 
-```fundamental
-alan:$1$HlR?M3fkL@oeJmsdLfhsLFM*4dflPh8:14197:0:99999:7:::
+既然我们已经展示了交互程序，接下来让我们介绍强大的非交互性程序。第一个就是`useradd(8)`. `useradd`略显不友好，但用在批处理脚本中能更快地创建用户，这就是为什么它常用在脚本中的原因。实际上，`adduser`只是个封装了`useradd`的脚本。`useradd`还有很多参数我们在此不一一列出，详见手册页。现在，让我们创建一个新用户：
+
+```Shell
+darkstar:~# useradd -d /data/home/alan -s /bin/bash -g users -G audio,cdrom,floppy,plugdev,video alan
 ```
 
-`shadow`文件除了密码外还包含了一些其他内容。它们分别是（从左到右）：用户名，加密后的密码，上一次修改密码的时间（单位：天数），下一次应该更新密码的时间间隔（单位：天数），密码失效前的天数，用户由于密码失效被禁用的时间，保留域。你会注意到这些“天数”们有一些是很大的数字，原因是Slackware从"Epoch"（即1970年一月一日）那一天开始计时。
+这样就添加了用户`alan`. 我将用户家目录设置为`/data/home/alan`并把`bash`设置为shell, 指定了`users`为默认组，并加入了一堆组方便桌面使用。你应该会注意到`useradd`并不像`adduser`那样交互。除非你接受所有`useradd`的默认参数，你就得手动设置每一项。
 
-要想新建一个用户，你需要使用`vipw(8)`来打开这些文件，它会使用你的`VISUAL`环境变量（如果没有定义`VISUAL`的话，会转而使用`EDITOR`. 如果两个环境变量都不存在，就会使用`vi`.）指定的编辑器打开`/etc/passwd`. 如果使用[-s]参数的话，它会打开`/etc/shadow`. 请务必使用`vipw`而不是直接使用编辑器打开，因为它会从此刻起锁定文件禁止其他程序编辑。
+既然知道了如何添加用户，我们就该学习一下如何添加组了。就像你猜想的那样，添加组的命令是`groupadd(8)`. `groupadd`用起来就像`useradd`, 不过可用参数更少。这条命令为系统添加了一个叫做`slackers`的用户组。
 
-这就是你所需的全部工具。你还要创建用户的家目录，并用`passwd`为它设置密码。
+```Shell
+darkstar:~# groupadd slackers
+```
+
+删除用户/组就和创建一样简单，只需运行`userdel(8)`和`groupdel(8)`. 默认情况下，`userdel`会保留用户的家目录，如果想要连同家目录一起删除，使用[-r]参数。
