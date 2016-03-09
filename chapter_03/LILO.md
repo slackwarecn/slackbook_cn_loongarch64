@@ -12,7 +12,7 @@ LILO是一种Linux引导器，并且目前是Slackware的默认引导器。如�
 
 `liloconfig`是能快速地配置好引导器，但如果你想知道究竟发生了什么的话，你需要看看LILO的配置文件：`/etc`下的`lilo.conf(5)`. `/etc/lilo.conf`分为了几个部分。最上面你能找到全局部分，这部分描述LILO应安装在何处（一般是MBR），启动时显示的图像或信息，启动默认操作系统的等待时长。以下是我的`lilo.conf`的全局部分，长这样：
 
-```fundamental
+```
 # LILO configuration file
 
 boot = /dev/sda
@@ -38,7 +38,7 @@ vga = 773
 
 接下来看看操作系统部分。每个Linux操作系统的配置以"image"配置行开头。Microsoft Windows操作系统以"other"配置行开头。现在让我们来看看Slackware和Windows各自的配置样例。
 
-```fundamental
+```
 # LILO configuration file
 ... global section ommitted ....
 # Linux bootable partition config begins
@@ -57,9 +57,9 @@ other = /dev/sda3
 
 对于像Slackware这样的Linux操作系统，image配置项规定了要启动的内核。在这个例子中，要启动的内核是`/boot/vmlinuz-generic-2.6.29.4`. 其余的几个配置项看名字就可知道作用：它们告诉LILO根分区的位置，使用哪个`initrd`文件，把根文件系统挂载为只读。`initrd`配置项对于那些使用通用内核，或使用LVM和软件RAID的人十分重要。它告诉LILO(以及内核)在哪找到使用`mkinitrd`创建的`initrd`.
 
-配置好`/etc/lilo.conf`后，运行`lilo(8)`来安装。不像GRUB和其他引导器那样，在更改配置文件之后需要重新运行lilo, 不然新修改的引导器镜像不会被安装，所做出的修改不会生效。
+配置好`/etc/lilo.conf`后，运行`lilo(8)`来安装。不像GRUB和其他引导器那样，在更改配置文件之后需要重新运行`lilo`, 不然新修改的引导器镜像不会被安装，所做出的修改不会生效。
 
-```Shell
+```
 darkstar:~# lilo
 Warning: LBA32 addressing assumed
 Added Slackware *
@@ -67,4 +67,5 @@ Added Backup
 6 warnings were issued.
 ```
 
-看见这些警告不必太惊慌，这些并不代表lilo出了问题，除非发现了致命错误。另外，LBA32 addressing 的警告是常有的事。
+看见这些警告不必太惊慌，这些并不代表`lilo`出了问题，除非发现了致命错误。另外，LBA32 addressing的警告是常有的事。
+
