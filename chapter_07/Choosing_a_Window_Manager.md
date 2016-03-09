@@ -4,4 +4,5 @@ Slackware Linux包含大量的窗口管理器和桌面环境。窗口管理器�
 
 选择窗口管理器的最简单方式就是`xwmconfig(1)`（已包含在Slackware内）。该程序允许用户选择`startx`要运行的窗口管理器。
 
-![ ](http://slackbook.org/beta/img/xwmconfig.png)
+![ ](../img/xwmconfig.png)
+
