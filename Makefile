@@ -1,17 +1,14 @@
 GITBOOK = gitbook
-OUTFILENAME = slackbook_cn
 
-all: html pdf epub mobi
+TARGET = slackbook_cn
+FORMATS = epub mobi pdf
+
+.PHONY: all clean $(FORMATS)
+
+all: html $(FORMATS)
 
 html:
-	$(GITBOOK) build . $(OUTFILENAME)_html
+	$(GITBOOK) build . $(TARGET)_html
 
-pdf:
-	$(GITBOOK) pdf . $(OUTFILENAME).pdf
-
-epub:
-	$(GITBOOK) epub . $(OUTFILENAME).epub
-
-mobi:
-	$(GITBOOK) mobi . $(OUTFILENAME).mobi
-
+$(FORMATS):
+	$(GITBOOK) $@ . $(TARGET).$@
