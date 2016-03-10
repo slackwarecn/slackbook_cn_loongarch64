@@ -2,7 +2,7 @@
 
 打开终端，输入 `emacs` ，Emacs就打开了。在字符模式下启动不带参数的emacs时，你会看到像这样的东西：
 
-![emacs在终端里的启动界面](./img/emacs_startup.jpg)
+![](../img/emacs_startup.jpg "emacs在终端里的启动界面")
 
 而在X窗口模式下时，Emacs可能会启动带图形界面的版本，如果不喜欢图形界面的版本，你可以在启动时加上 `-nw` 参数，让它运行在终端里，像这样： `emacs -nw` 。
 
