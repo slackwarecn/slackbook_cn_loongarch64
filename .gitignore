@@ -22,6 +22,7 @@ tags*
 # Book build output
 /_book/
 /slackbook_cn/
+/slackbook_cn_html/
 
 # eBook build output
 *.epub
