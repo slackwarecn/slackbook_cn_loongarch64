@@ -15,7 +15,7 @@
 
 ### 本地编译
 
-```shell
+```
 $ git clone https://github.com/slackwarecn/slackbook_cn
 $ cd slackbook_cn
 $ gitbook build . slackbook_cn
@@ -28,62 +28,13 @@ $ gitbook mobi . slackbook_cn.mobi
 
 ### 贡献力量
 
-#### 参与翻译
-
-你有三种方式可以参与Slackbook 中文版的翻译。
-
-1. 提交[Issues][ID_ISSUES]，适合单处的翻译错误。
-2. 提交[Pull Requests][ID_PULL_REQUESTS]，适合较多翻译内容提交。
-3. [申请][ID_JOINUS]成为[The Slackware Linux CN Community][ID_SLACKWARECN] 的一员，适合长期跟进翻译工作。
-
-#### 原始文档
-
-你可以通过如下指令获得原始文档：
-
-```bash
-$ git clone git://slackbook.org/slackbook.git
-$ cd slackbook
-$ make
-```
-
-或者你可以在[**这里**](http://slackbook.org/beta)在线查看原始文档。
-
-#### 贡献者列表
-
-| 内容 | 贡献者 |
-| --- | --- |
-| 翻译框架 | [Arondight][ID_NAME_Arondight] |
-| 前言 | |
-| 第一章 | |
-| 第二章 | |
-| 第三章 | |
-| 第四章 | |
-| 第五章 | |
-| 第六章 | |
-| 第七章 | |
-| 第八章 | |
-| 第九章 | |
-| 第十章 | |
-| 第十一章 | |
-| 第十二章 | [Arondight][ID_NAME_Arondight] |
-| 第十三章 | |
-| 第十四章 | |
-| 第十五章 | |
-| 第十六章 | |
-| 第十七章 | |
-| 第十八章 | |
-| 第十九章 | |
+如果你想为项目贡献你的力量，请务必事先阅读[CONTRIBUTING.md](CONTRIBUTING.md)
 
 [ID_GITHUB]: https://github.com/slackwarecn/slackbook_cn "访问项目主页"
-[ID_SLACKWARECN]: https://github.com/slackwarecn "访问The Slackware Linux CN Community"
-[ID_JOINUS]: http://slackwarecn.github.io/JoinUs "加入我们！"
 [ID_SLACKBOOK]: http://slackbook.org "访问The Revised Slackware Book Project 主页"
-[ID_ISSUES]: https://github.com/slackwarecn/slackbook_cn/issues "提交Issues"
-[ID_PULL_REQUESTS]: https://github.com/slackwarecn/slackbook_cn/pulls "查看Pull requests"
-[ID_CHANGES]: https://github.com/slackwarecn/slackbook_cn/blob/master/Changes.md "查看修订历史"
+[ID_CHANGES]: https://github.com/slackwarecn/slackbook_cn/blob/master/CHANGES.md "查看修订历史"
 [ID_HTML]: https://www.gitbook.com/read/book/slackwarecn/slackbook_cn "阅读在线HTML"
 [ID_EPUB]: https://www.gitbook.com/download/epub/book/slackwarecn/slackbook_cn "获取EPUB"
 [ID_RELEASES]: https://github.com/slackwarecn/slackbook_cn/releases "查看已发布文档"
 [ID_CALIBRE]: https://github.com/kovidgoyal/calibre/releases "点此获取Calibre"
-[ID_NAME_Arondight]: https://github.com/Arondight
 

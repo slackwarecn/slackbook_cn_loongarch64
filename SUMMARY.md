@@ -1,6 +1,7 @@
 # 目录
 
 + [翻译说明](README.md)
+  * [贡献力量](CONTRIBUTING.md)
 + [前言](preface/README.md)
   * [目标读者](preface/Intended_Audience.md)
   * [为什么会有一版新的Slackware手册？](preface/Why_A_New_Slackware_Book.md)
@@ -26,8 +27,8 @@
   + [mkinitrd](chapter_03/mkinitrd.md)
   + [LILO](chapter_03/LILO.md)
   + [多引导](chapter_03/Dual_Booting/README.md)
-      * [引导多个分区](chapter_03/Dual_Booting/Dual_Booting_with_Partitions.md)
-      * [引导多个硬盘](chapter_03/Dual_Booting/Dual_Booting_from_Hard_Drives.md)
+    * [引导多个分区](chapter_03/Dual_Booting/Dual_Booting_with_Partitions.md)
+    * [引导多个硬盘](chapter_03/Dual_Booting/Dual_Booting_from_Hard_Drives.md)
 + [基本Shell命令](chapter_04/README.md)
   + [系统文档](chapter_04/System_Documentation.md)
   + [处理文件和目录](chapter_04/Dealing_with_Files_and_Directories/README.md)
