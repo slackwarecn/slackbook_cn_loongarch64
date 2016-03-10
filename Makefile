@@ -1,7 +1,11 @@
+# ==============================================================================
+# make all/pdf/epub/mobi/clean
+# ==============================================================================
 GITBOOK = gitbook
+RM = rm
 
 TARGET = slackbook_cn
-FORMATS = epub mobi pdf
+FORMATS = pdf epub mobi
 
 .PHONY: all clean $(FORMATS)
 
@@ -12,3 +16,8 @@ html:
 
 $(FORMATS):
 	$(GITBOOK) $@ . $(TARGET).$@
+
+clean:
+	$(foreach $(EXT), $(FORMATS), $(RM) -f $(TARGET).$(EXT))
+	$(RM) -rf $(TARGET)_html
+
