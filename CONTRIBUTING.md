@@ -47,7 +47,7 @@ $ git config user.email "email"
 
 ```
 $ git add .
-$ git commit -am "Fix issue #n 该章节翻译已经完成 "
+$ git commit -am "Fix #n 该章节翻译已经完成 "
 $ git push origin master
 ```
 
