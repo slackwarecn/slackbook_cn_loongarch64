@@ -118,18 +118,18 @@ $ git pull origin master
 | 第三章 | [unnamed42][ID_NAME_UNNAMED42] |
 | 第四章 | [abbycin][ID_NAME_ABBYCIN] [unnamed42][ID_NAME_UNNAMED42] |
 | 第五章 | [liandesinian][ID_NAME_LIANDESINIAN] |
-| 第六章 | [unnamed42][ID_NAME_UNNAMED42] |
-| 第七章 | |
+| 第六章 | [farkasity][ID_NAME_FARKASITY] |
+| 第七章 | [unnamed42][ID_NAME_UNNAMED42] |
 | 第八章 | |
-| 第九章 | |
-| 第十章 | |
-| 第十一章 | |
+| 第九章 | [unnamed42][ID_NAME_UNNAMED42] |
+| 第十章 | [unnamed42][ID_NAME_UNNAMED42] |
+| 第十一章 | [abbycin][ID_NAME_ABBYCIN] |
 | 第十二章 | [Arondight][ID_NAME_ARONDIGHT] |
-| 第十三章 | |
-| 第十四章 | |
+| 第十三章 | [zhuduiyou][ID_NAME_ZHUDUIYOU] |
+| 第十四章 | [cantaosir][ID_NAME_CANTAOSIR] |
 | 第十五章 | |
-| 第十六章 | |
-| 第十七章 | |
+| 第十六章 | [zhuduiyou][ID_NAME_ZHUDUIYOU] |
+| 第十七章 | [zhuduiyou][ID_NAME_ZHUDUIYOU] [紫雨蝶眸][ID_NAME_ZIYUDIEMOU] |
 | 第十八章 | [Arondight][ID_NAME_ARONDIGHT] [zha0300][ID_NAME_ZHA0300] |
 | 第十九章 | [coolrc136][ID_NAME_COOLRC136] |
 
@@ -145,5 +145,7 @@ $ git pull origin master
 [ID_NAME_LIANDESINIAN]: https://github.com/liandesinian
 [ID_NAME_ZHA0300]: https://github.com/zha0300
 [ID_NAME_ABBYCIN]: https://github.com/abbycin
+[ID_NAME_FARKASITY]: https://github.com/farkasity
+[ID_NAME_CANTAOSIR]: https://github.com/cantaosir
 [ID_NAME_ZIYUDIEMOU]: http://tieba.baidu.com/home/main?un=%E7%B4%AB%E9%9B%A8%E8%9D%B6%E7%9C%B8&ie=utf-8&fr=pb
 
