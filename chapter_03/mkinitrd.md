@@ -24,10 +24,10 @@ initrd是一个`cpio(1)`文档，所以创建起来不是那么简单。还好�
 darkstar:~# mkinitrd --help
 mkinitrd creates an initial ramdisk (actually an initramfs cpio+gzip
 archive) used to load kernel modules that are needed to mount the
-root filesystem，or other modules that might be needed before the
-root filesystem is available。 Other binaries may be added to the
-initrd，and the script is easy to modify。 Be creative。 :-)
-...。many more lines deleted ....
+root filesystem, or other modules that might be needed before the
+root filesystem is available.  Other binaries may be added to the
+initrd, and the script is easy to modify.  Be creative.  :-)
+.... many more lines deleted ....
 ```
 
 使用`mkinitrd`时，你需要掌握如下几个信息：你的根分区、根分区文件系统、你所使用的所有硬盘控制器、是否在使用LVM，软件RAID，硬盘加密。除非你在用某种SCSI控制器（并且根分区位于其上），你只需要知道根分区的文件系统和分区类型。现在假设你使用巨型内核启动进入了Slackware安装环境，此时只需使用`mount`命令查看`/proc/mount`的内容就能轻易地知道。

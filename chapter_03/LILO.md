@@ -27,7 +27,7 @@ timeout = 50
 
 # VESA framebuffer console @ 1024x768x256
 vga = 773
-...。many more lines ommitted ....
+.... many more lines ommitted ....
 ```
 
 完整的LILO参数详见`lilo.conf`的手册页。在此文档中我们将简要地讨论一些常用选项。
@@ -40,7 +40,7 @@ vga = 773
 
 ```
 # LILO configuration file
-..。global section ommitted ....
+... global section ommitted ....
 # Linux bootable partition config begins
 image = /boot/vmlinuz-generic-2.6.29.4
   root = /dev/sda1
