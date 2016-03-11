@@ -39,7 +39,7 @@
 
 <div style="margin-left: 0.5in; margin-right: 0.5in;">
   <p>这个选择也是可行的，尤其是第二系统是Windows的时候。经常Windows更新之后会重写MBR, 这时候就要手动重新安装LILO了。</p>
-  <p>要在其他系统抹除LILO之后修复，启动Slackware安装介质进入配置阶段。<strong>不要</strong>重新分区或重新安装Slackware, 直接跳到“<a href="/slackwarecn/slackbook_cn/blob/master/chapter_02/The_setup_Program/Configure.md">配置</a>”部分。</p>
+  <p>要在其他系统抹除LILO之后修复，启动Slackware安装介质进入配置阶段。<strong>不要</strong>重新分区或重新安装Slackware, 直接跳到“<a href="../../chapter_02/The_setup_Program/Configure.md">配置</a>”部分。</p>
   <p>使用简单模式LILO的时候，它也会自动探测并创建启动菜单。如果失败了，那么就需要手动创建条目了。</p>
 </div>
 
