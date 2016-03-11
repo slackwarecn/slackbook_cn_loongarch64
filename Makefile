@@ -7,7 +7,7 @@ RM = rm
 TARGET = slackbook_cn
 FORMATS = pdf epub mobi
 
-.PHONY: all clean $(FORMATS)
+.PHONY: all clean html $(FORMATS)
 
 all: html $(FORMATS)
 
@@ -18,11 +18,6 @@ $(FORMATS):
 	$(GITBOOK) $@ . $(TARGET).$@
 
 clean:
-# 倾向于使用的语句，但水平有限 {
-#	$(foreach $(EXT), $(FORMATS), $(RM) -f $(TARGET).$(EXT))
-#$(RM) -rf $(TARGET)_html
-# }
-# 当下使用的土法子，求改精确点 {
-	$(RM) -rf $(TARGET).*
-# }
+	-$(RM) -f $(foreach EXT, $(FORMATS), $(TARGET).$(EXT))
+	-$(RM) -rf $(TARGET)_html
 
