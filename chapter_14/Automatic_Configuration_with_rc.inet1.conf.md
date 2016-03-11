@@ -1,2 +1,2 @@
-### 使用`rc.inet1.conf`自动配置网络
+### 使用rc.inet1.conf自动配置网络
 

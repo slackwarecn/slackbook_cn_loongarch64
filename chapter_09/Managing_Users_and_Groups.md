@@ -87,5 +87,5 @@ darkstar:~# useradd -d /data/home/alan -s /bin/bash -g users -G audio,cdrom,flop
 darkstar:~# groupadd slackers
 ```
 
-删除用户/组就和创建一样简单，只需运行`userdel(8)`和`groupdel(8)`。默认情况下，`userdel`会保留用户的家目录，如果想要连同家目录一起删除，使用`-r`参数。
+删除用户或组就和创建一样简单，只需运行`userdel(8)`和`groupdel(8)`。默认情况下，`userdel`会保留用户的家目录，如果想要连同家目录一起删除，使用`-r`参数。
 
