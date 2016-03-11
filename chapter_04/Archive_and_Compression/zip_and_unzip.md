@@ -9,7 +9,7 @@ darkstar:~$ zip -r /tmp/home.zip /home
 darkstar:~$ zip /tmp/large_file.zip /tmp/large_file
 ```
 
-参数的顺序非常重要。第一个文件名必须是要创建的zip文件（如果没有`.zip`扩展名，zip会自动加上），另外的是待压缩的文件。
+参数的顺序非常重要。第一个文件名必须是要创建的zip文件（如果没有`.zip`扩展名，`zip`会自动加上），另外的是待压缩的文件。
 
 自然，`unzip(1)`是解压zip文件的工具。
 

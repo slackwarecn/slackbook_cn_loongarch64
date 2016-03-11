@@ -8,7 +8,7 @@ bin/   dev/  home/  lost+found/  mnt/  proc/  sbin/  sys/  usr/
 boot/  etc/  lib/   media/       opt/  root/  srv/   tmp/  var/
 ```
 
-注意，上面所有列出项都是目录。通过后面附带的`/`我们能够很容易地把它们和文件区分开（标准文件没有这个后缀）。此外，可执行文件会有一个星号的后缀。`ls`还能做到更多。要列出文件和目录的权限，你需要“长列表(long list)”：
+注意，上面所有列出项都是目录。通过后面附带的`/`我们能够很容易地把它们和文件区分开（标准文件没有这个后缀）。此外，可执行文件会有一个星号的后缀。`ls`还能做到更多。要列出文件和目录的权限，你需要“长列表”（long list）：
 
 ```
 darkstar:~$ ls -l /home/alan/Desktop
