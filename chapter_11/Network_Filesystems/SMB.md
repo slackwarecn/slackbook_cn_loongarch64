@@ -1,8 +1,8 @@
 #### SMB
 
-SMB是Windows网络文件共享协议。连接到一个SMB共享（通常称为samba共享）是非常简单的。然而SMB不像NFS那样被很好的支持。但是，它在Windows计算机之间提供了更高的性能和可连接性。基于此，SMB是部署在本地网络中最常用的网络文件共享协议。在Slackware中导出SMB共享是由samba守护进程和`smb.conf`完成的。然而，如何配置samba服务超出本书的讨论范围中。可以在线查找额外的文档，也可以查看`man`手册来获取更多信息。  
+SMB是Windows网络文件共享协议。连接到一个SMB共享（通常称为samba共享）是非常简单的。然而SMB不像NFS那样被很好的支持。但是，它在Windows计算机之间提供了更高的性能和可连接性。基于此，SMB是部署在本地网络中最常用的网络文件共享协议。在Slackware中导出SMB共享是由samba守护进程和`smb.conf`完成的。然而，如何配置samba服务超出了本书的讨论范围。你可以在线查找额外的文档，也可以查看`man`手册来获取更多信息。  
 
-挂载SMB共享和挂载NFS一样简单。你只需要以哦那个样的方式告诉`mount`服务器的位置以及你想访问的东西。此外，你还必须指定一个用户名和密码。  
+挂载SMB共享和挂载NFS一样简单。你只需要以挂载NFS那样的方式告诉`mount`服务器的位置以及你想访问的东西。此外，你还必须指定一个用户名和密码。  
 ```plain
 darkstar:~# mount -t cifs //darkstar/home /home -o username=alan,password=secret
 ```  
