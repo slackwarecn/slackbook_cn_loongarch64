@@ -115,7 +115,7 @@
   * [使用rc.inet1.conf自动配置网络](chapter_14/Automatic_Configuration_with_rc.inet1.conf.md)
 + [无线网络](chapter_15/README.md)
   + [iwconfig](chapter_15/iwconfig.md)
-  + [（缺乏）等效有线网络的保护](chapter_15/Wired_Equivilant_Protection_or_Lack_Thereof.md)
+  + [有线等（无）效保密](chapter_15/Wired_Equivilant_Protection_or_Lack_Thereof.md)
   + [Wifi登陆保护](chapter_15/Wifi_Protected_Access/README.md)
     * [再看rc.inet1.conf](chapter_15/Wifi_Protected_Access/rc.inet1.conf_revisited.md)
   + [wicd](chapter_15/wicd.md)
