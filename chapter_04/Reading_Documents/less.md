@@ -1,6 +1,6 @@
 #### less
 
-为了克服`more`的缺点，一个新的“pager”诞生了，针锋相对地起名为`less(1)`. `less`是一个非常强大的“pager”，除了支持`more`的所有功能以外还有一些其他特性。比如，`less`允许使用方向键来控制。
+为了克服`more`的缺点，一个新的“pager”诞生了，针锋相对地起名为`less(1)`。`less`是一个非常强大的“pager”，除了支持`more`的所有功能以外还有一些其他特性。比如，`less`允许使用方向键来控制。
 
 因为它相当受欢迎，许多Linux发行版将`more`排除在外来支持`less`. Slackware两个都有。另外，Slackware有一个`less`的预处理器`lesspipe.sh`。它能让用户在一些非文本文件上执行`less`。`lesspipe.h`在传入文件后会生成文本输出，并在`less`内显示。
 

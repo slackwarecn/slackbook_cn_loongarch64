@@ -1,18 +1,18 @@
 ### LILO
 
-LILO是一种Linux引导器，并且目前是Slackware的默认引导器。如果你之前用过其他Linux发行版，你应该听说过GRUB. 如果你更喜欢GRUB的话。前往Slackware CD的`/extra`就能找到它。由于LILO是Slackware的默认引导器，在此我们还是得重点研讨它。
+LILO是一种Linux引导器，并且目前是Slackware的默认引导器。如果你之前用过其他Linux发行版，你应该听说过GRUB。如果你更喜欢GRUB的话。前往Slackware CD的`/extra`就能找到它。由于LILO是Slackware的默认引导器，在此我们还是得重点研讨它。
 
 > 译者注：当前版本的Slackware提供的确切来说是GRUB2，同事由于LILO已经停止开发，通常认为GRUB2是一个更棒的选择。
 
-对新手来说配置LILO可能有点难，所以Slackware附带了个配置工具叫`liloconfig`. 正常来说`liloconfig`的第一次运行是安装程序自动完成的，不过你也随时可以在终端里调用它。
+对新手来说配置LILO可能有点难，所以Slackware附带了个配置工具叫`liloconfig`。正常来说`liloconfig`的第一次运行是安装程序自动完成的，不过你也随时可以在终端里调用它。
 
 ![ ](http://slackbook.org/beta/png/setup-lilo.png)
 
-`liloconfig`有两种操作模式：简单模式和专家模式。简单模式会自动为您配置好LILO. 如果Slackware是你电脑上的唯一系统，简单模式就能快速、正确地完成配置。当然它也能探测Windows系统并将其添加到`/etc/lilo.conf`, 这样你开机的时候就能选择启动哪个系统。
+`liloconfig`有两种操作模式：简单模式和专家模式。简单模式会自动为您配置好LILO。如果Slackware是你电脑上的唯一系统，简单模式就能快速、正确地完成配置。当然它也能探测Windows系统并将其添加到`/etc/lilo.conf`，这样你开机的时候就能选择启动哪个系统。
 
 要想使用专家模式的话，你需要知道Slackware的根分区位置。你也可以设置为其他Linux发行版的根分区，但我们不保证能正确运行：`liloconfig`会尝试使用Slackware的内核来启动该Linux系统，这应该不是你希望的结果。不过，在专家模式下配置Windows分区倒是简单。我们给出一条专家模式下的建议：把LILO装在主引导记录（MBR）上。以前，我们会建议把LILO装在根分区上并将该分区设为可引导分区；现在，LILO已经足够成熟，能安全地安装在MBR上了。实际上，这么做的话你碰到的问题会更少。
 
-`liloconfig`是能快速地配置好引导器，但如果你想知道究竟发生了什么的话，你需要看看LILO的配置文件：`/etc`下的`lilo.conf(5)`. `/etc/lilo.conf`分为了几个部分。最上面你能找到全局部分，这部分描述LILO应安装在何处（一般是MBR），启动时显示的图像或信息，启动默认操作系统的等待时长。以下是我的`lilo.conf`的全局部分，它看起来就像这样：
+`liloconfig`是能快速地配置好引导器，但如果你想知道究竟发生了什么的话，你需要看看LILO的配置文件：`/etc`下的`lilo.conf(5)`。`/etc/lilo.conf`分为了几个部分。最上面你能找到全局部分，这部分描述LILO应安装在何处（一般是MBR），启动时显示的图像或信息，启动默认操作系统的等待时长。以下是我的`lilo.conf`的全局部分，它看起来就像这样：
 
 ```
 # LILO configuration file
@@ -57,9 +57,9 @@ other = /dev/sda3
 # Windows bootable partition config ends
 ```
 
-对于像Slackware这样的Linux操作系统，image配置项规定了要启动的内核。在这个例子中，要启动的内核是`/boot/vmlinuz-generic-2.6.29.4`. 其余的几个配置项看名字就可知道作用：它们告诉LILO根分区的位置，使用哪个`initrd`文件，把根文件系统挂载为只读。`initrd`配置项对于那些使用通用内核，或使用LVM和软件RAID的人十分重要。它告诉LILO(以及内核)在哪找到使用`mkinitrd`创建的`initrd`.
+对于像Slackware这样的Linux操作系统，image配置项规定了要启动的内核。在这个例子中，要启动的内核是`/boot/vmlinuz-generic-2.6.29.4`。其余的几个配置项看名字就可知道作用：它们告诉LILO根分区的位置，使用哪个`initrd`文件，把根文件系统挂载为只读。`initrd`配置项对于那些使用通用内核，或使用LVM和软件RAID的人十分重要。它告诉LILO(以及内核)在哪找到使用`mkinitrd`创建的`initrd`.
 
-配置好`/etc/lilo.conf`后，运行`lilo(8)`来安装。不像GRUB和其他引导器那样，在更改配置文件之后需要重新运行`lilo`, 不然新修改的引导器镜像不会被安装，所做出的修改不会生效。
+配置好`/etc/lilo.conf`后，运行`lilo(8)`来安装。不像GRUB和其他引导器那样，在更改配置文件之后需要重新运行`lilo`，不然新修改的引导器镜像不会被安装，所做出的修改不会生效。
 
 ```
 darkstar:~# lilo
