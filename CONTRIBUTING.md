@@ -47,7 +47,7 @@ $ git config user.email "email"
 
 ```
 $ git add .
-$ git commit -am "Fix #n 该章节翻译已经完成 "
+$ git commit -am "Close #n 该章节翻译已经完成 "
 $ git push origin master
 ```
 
@@ -74,7 +74,7 @@ $ git config user.email "email"
 
 ```
 $ git add .
-$ git commit -am "Fix issue #n 该章节翻译已经完成 "
+$ git commit -m "Close #n 该章节翻译已经完成 "
 $ git push origin master
 ```
 
@@ -127,7 +127,7 @@ $ git pull origin master
 | 第十二章 | [Arondight][ID_NAME_ARONDIGHT] |
 | 第十三章 | [zhuduiyou][ID_NAME_ZHUDUIYOU] |
 | 第十四章 | [cantaosir][ID_NAME_CANTAOSIR] |
-| 第十五章 | |
+| 第十五章 | [unnamed42][ID_NAME_UNNAMED42] |
 | 第十六章 | [zhuduiyou][ID_NAME_ZHUDUIYOU] |
 | 第十七章 | [zhuduiyou][ID_NAME_ZHUDUIYOU] [紫雨蝶眸][ID_NAME_ZIYUDIEMOU] |
 | 第十八章 | [Arondight][ID_NAME_ARONDIGHT] [zha0300][ID_NAME_ZHA0300] |
