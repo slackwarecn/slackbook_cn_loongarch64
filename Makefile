@@ -18,6 +18,6 @@ $(FORMATS):
 	$(GITBOOK) $@ . $(TARGET).$@
 
 clean:
-	-$(RM) -f $(foreach EXT, $(FORMATS), $(TARGET).$(EXT))
+	-$(RM) -f $(addprefix $(TARGET)., $(FORMATS))
 	-$(RM) -rf $(TARGET)_html
 
