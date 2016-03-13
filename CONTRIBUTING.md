@@ -15,6 +15,7 @@
 ```
 $ git clone git://slackbook.org/slackbook.git
 $ cd slackbook
+$ git checkout 7151c2376e05ee3a34025a24080fa283e460d7cc
 $ make
 ```
 
@@ -47,13 +48,13 @@ $ git config user.email "email"
 
 ```
 $ git add .
-$ git commit -am "Close #n 该章节翻译已经完成 "
+$ git commit -m "Close #n 该章节翻译已经完成 "
 $ git push origin master
 ```
 
 ###### 发起Pull Request
 
-现在你可以在你的Github 项目页面上发起[pull request][ID_PULL_REQUESTS]。
+现在你可以在你的Github 项目页面上发起[Pull Request][ID_PULL_REQUESTS]。
 
 ##### 组织内翻译提交流程
 
@@ -135,7 +136,7 @@ $ git pull origin master
 
 [ID_SLACKWARECN]: https://github.com/slackwarecn "访问The Slackware Linux CN Community"
 [ID_JOINUS]: http://slackwarecn.github.io/JoinUs "加入我们！"
-[ID_PULL_REQUESTS]: https://github.com/slackwarecn/slackbook_cn/pulls "查看Pull requests"
+[ID_PULL_REQUESTS]: https://github.com/slackwarecn/slackbook_cn/pulls "查看Pull Requests"
 [ID_ISSUES]: https://github.com/slackwarecn/slackbook_cn/issues "提交Issues"
 
 [ID_NAME_ARONDIGHT]: https://github.com/Arondight
