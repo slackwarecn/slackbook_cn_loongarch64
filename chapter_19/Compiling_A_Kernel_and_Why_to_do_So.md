@@ -66,7 +66,7 @@ Ext3 journalling file system support (EXT3_FS) [M/n/y/?] m
 The Extended 4 (ext4) filesystem (EXT4_FS) [N/m/y/?] (NEW) m
 ```
 
-从上面你可以看到，我正在编译的内核新增了对ext4的支持。[oldconfig]已经按照我原先的配置进行设置了，保留了所有旧选项的设置，仅仅让我对新增的选项进行配置。通常这可以不用选择默认选项，但是你可能希望改变它们。[oldconfig]可以方便的只显示给你新增的选项，非常适合那些只是想尝试最新版内核的用户。
+从上面你可以看到，我正在编译的内核新增了对ext4的支持`oldconfig`已经按照我原先的配置进行设置了，保留了所有旧选项的设置，仅仅让我对新增的选项进行配置。通常这可以不用选择默认选项，但是你可能希望改变它们。`oldconfig`可以方便的只显示给你新增的选项，非常适合那些只是想尝试最新版内核的用户。
 
 对于更细致的配置任务，我们也有多种选项。 Linux内核可以通过三种主要方式进行配置。第一个是`config`，将逐一显示每个选项让你进行配置。这是这个过程实在过于冗长，几乎已经没有人使用它了。
 
@@ -113,7 +113,7 @@ scripts/kconfig/conf -s arch/x86/Kconfig
 
 如果编译过程因为错误而中止，你首先应该检查你的内核配置。编译错误通常是由错误的`.config`文件导致的。如果你成功完成了上面的步骤，内核的编译仍然没有完全结束，我们还需要构建模块。
 
-```bash
+```
 darkstar:/usr/src/linux# make modules
   CHK     include/linux/version.h
   CHK     include/linux/utsrelease.h
