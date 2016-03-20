@@ -2,7 +2,7 @@
 
 LILO是一种Linux引导器，并且目前是Slackware的默认引导器。如果你之前用过其他Linux发行版，你应该听说过GRUB。如果你更喜欢GRUB的话。前往Slackware CD的`/extra`就能找到它。由于LILO是Slackware的默认引导器，在此我们还是得重点研讨它。
 
-> 译者注：当前版本的Slackware提供的确切来说是GRUB2，同事由于LILO已经停止开发，通常认为GRUB2是一个更棒的选择。
+> 译者注：当前版本的Slackware提供的确切来说是GRUB2，同时由于LILO已经停止开发，通常认为GRUB2是一个更棒的选择。
 
 对新手来说配置LILO可能有点难，所以Slackware附带了个配置工具叫`liloconfig`。正常来说`liloconfig`的第一次运行是安装程序自动完成的，不过你也随时可以在终端里调用它。
 
