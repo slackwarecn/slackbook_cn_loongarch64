@@ -6,7 +6,7 @@ LILO是一种Linux引导器，并且目前是Slackware的默认引导器。如�
 
 对新手来说配置LILO可能有点难，所以Slackware附带了个配置工具叫`liloconfig`。正常来说`liloconfig`的第一次运行是安装程序自动完成的，不过你也随时可以在终端里调用它。
 
-![ ](http://slackbook.org/beta/png/setup-lilo.png)
+![ ](../png/setup-lilo.png)
 
 `liloconfig`有两种操作模式：简单模式和专家模式。简单模式会自动为您配置好LILO。如果Slackware是你电脑上的唯一系统，简单模式就能快速、正确地完成配置。当然它也能探测Windows系统并将其添加到`/etc/lilo.conf`，这样你开机的时候就能选择启动哪个系统。
 

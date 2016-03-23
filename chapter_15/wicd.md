@@ -4,7 +4,7 @@
 
 > 译者注：Slackware中同样提供NetworkManager。
 
-```fundamental
+```
 # rc.inet1.conf
 # =============
 # Config information for eth0:
@@ -25,8 +25,6 @@ darkstar:~# /etc/rc.d/rc.wicd start
 ```
 
 如果你主要使用控制台的话，只需运行`wicd-curses`。此外，还可以使用由“X”提供的图形化桌面，你可以在那上面用KDE或XFCE菜单启动`wicd`图形化前端。
-
-![ ](http://slackbook.org/beta/img/wicd.png)
 
 此外，你可以通过终端或运行对话框手动运行`wicd-client(1)`。
 
