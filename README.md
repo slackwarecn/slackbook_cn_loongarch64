@@ -10,7 +10,7 @@
 
 ### 获取文档
 
-+ [在线阅读][ID_HTML]
++ [在线阅读][ID_ONLINE]
 + [发布页面][ID_RELEASES]
 
 ### 本地编译
@@ -30,8 +30,7 @@ $ make all
 [ID_GITHUB]: https://github.com/slackwarecn/slackbook_cn "访问项目主页"
 [ID_SLACKBOOK]: http://slackbook.org "访问The Revised Slackware Book Project主页"
 [ID_CHANGES]: https://github.com/slackwarecn/slackbook_cn/blob/master/CHANGES.md "查看修订历史"
-[ID_HTML]: https://www.gitbook.com/read/book/slackwarecn/slackbook_cn "阅读在线HTML"
-[ID_EPUB]: https://www.gitbook.com/download/epub/book/slackwarecn/slackbook_cn "获取EPUB"
+[ID_ONLINE]: https://www.gitbook.com/book/slackwarecn/slackbook_cn/details "阅读在线版本"
 [ID_RELEASES]: https://github.com/slackwarecn/slackbook_cn/releases "查看已发布文档"
 [ID_GITBOOK]: https://github.com/GitbookIO/gitbook "Gitbook项目主页"
 [ID_CALIBRE]: https://github.com/kovidgoyal/calibre/releases "点此获取Calibre"
