@@ -25,7 +25,7 @@ $ make all
 
 ### 贡献力量
 
-如果你想为项目贡献你的力量，请务必事先阅读[CONTRIBUTING.md](CONTRIBUTING.md)
+如果你想为项目贡献你的力量，请务必事先阅读[CONTRIBUTING.md](CONTRIBUTING.md)。
 
 [ID_GITHUB]: https://github.com/slackwarecn/slackbook_cn "访问项目主页"
 [ID_SLACKBOOK]: http://slackbook.org "访问The Revised Slackware Book Project主页"

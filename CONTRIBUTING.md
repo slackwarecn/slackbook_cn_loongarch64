@@ -13,7 +13,7 @@
 你可以通过如下指令获得原始文档：
 
 ```
-$ git clone git://slackbook.org/slackbook.git
+$ git clone https://github.com/slackwarecn/slackbook.git
 $ cd slackbook
 $ git checkout 7151c2376e05ee3a34025a24080fa283e460d7cc
 $ make
@@ -107,6 +107,10 @@ $ git push -f origin master
 ```
 $ git pull origin master
 ```
+
+#### 签名
+
+请尽量使用自己的GPG密钥对提交进行签名。
 
 #### 贡献者列表
 
