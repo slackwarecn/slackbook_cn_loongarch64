@@ -30,7 +30,7 @@ $ make all
 [ID_GITHUB]: https://github.com/slackwarecn/slackbook_cn "访问项目主页"
 [ID_SLACKBOOK]: http://slackbook.org "访问The Revised Slackware Book Project主页"
 [ID_CHANGES]: https://github.com/slackwarecn/slackbook_cn/blob/master/CHANGES.md "查看修订历史"
-[ID_ONLINE]: https://www.gitbook.com/book/slackwarecn/slackbook_cn/details "阅读在线版本"
+[ID_ONLINE]: https://app.gitbook.com/@slackwarecn/s/slackbook_cn "阅读在线版本"
 [ID_RELEASES]: https://github.com/slackwarecn/slackbook_cn/releases "查看已发布文档"
 [ID_GITBOOK]: https://github.com/GitbookIO/gitbook "Gitbook项目主页"
 [ID_CALIBRE]: https://github.com/kovidgoyal/calibre/releases "点此获取Calibre"
