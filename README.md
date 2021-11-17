@@ -15,13 +15,17 @@
 
 ### 本地编译
 
+确保你的系统中有`xdg-utils`、`wget`、`xz-utils`和`python2.6+`以安装[Calibre][ID_CALIBRE]。[GitBook][ID_GITBOOK]需要此软件进行PDF、EPUB和MOBI的格式转换。
+
 ```
+$ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
+$ sudo npm install -g @0y0/gitbook-cli
 $ git clone https://github.com/slackwarecn/slackbook_cn
 $ cd slackbook_cn
 $ make all
 ```
 
-> 使用[GitBook][ID_GITBOOK]本地编译需要安装[Calibre][ID_CALIBRE]以提供PDF、EPUB和MOBI的转换工具。
+> 因为GitBook官方已经[不再支持CLI][ID_GITBOOK_DEPRECATION]，所以这里使用了非官方维护的版本。
 
 ### 贡献力量
 
@@ -33,5 +37,6 @@ $ make all
 [ID_ONLINE]: https://slackwarecn.gitbook.io/slackbook_cn "阅读在线版本"
 [ID_RELEASES]: https://github.com/slackwarecn/slackbook_cn/releases "查看已发布文档"
 [ID_GITBOOK]: https://github.com/GitbookIO/gitbook "Gitbook项目主页"
+[ID_GITBOOK_DEPRECATION]: https://github.com/GitbookIO/gitbook#%EF%B8%8F-deprecation-warning "查看GitBook官方不再支持CLI公告"
 [ID_CALIBRE]: https://github.com/kovidgoyal/calibre/releases "点此获取Calibre"
 
