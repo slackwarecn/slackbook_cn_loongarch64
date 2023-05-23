@@ -25,4 +25,3 @@ packets
 17  sac-main.cwo.com (209.210.78.20)  88.105 ms  87.467 ms  87.526 ms
 18  slackware.com (64.57.102.34)  85.682 ms  86.322 ms  85.594 ms
 ```
-

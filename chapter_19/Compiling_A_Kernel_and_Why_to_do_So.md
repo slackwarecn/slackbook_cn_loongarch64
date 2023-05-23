@@ -1,6 +1,6 @@
 ### 编译以及为什么要编译内核
 
-大部分Slackware用户永远都不需要自己编译内核，因为Slackware提供的huge和generic两种内核几乎包含了你所需要的所有支持。
+大部分 Slackware 用户永远都不需要自己编译内核，因为 Slackware 提供的 huge 和 generic 两种内核几乎包含了你所需要的所有支持。
 
 > 译者注：这里的“huge”和“generic”内核分别对应“[mkinitrd](../chapter_03/mkinitrd.md)”一节中所说的“巨型”和“通用”内核。
 
@@ -29,7 +29,7 @@ darkstar:/mnt/cdrom/kernels# ls genric.s
 System.map.gz  bzImage  config
 ```
 
-你可以轻松地下载或复制你想要的`config`文件替换`.config`来作为内核配置的基础文件。这里我使用了推荐的generic内核作为基础，你也可以使用huge内核的配置文件。generic内核将更多选项建立为模块，从而减小内核映像的大小，但它通常需要使用initrd。
+你可以轻松地下载或复制你想要的`config`文件替换`.config`来作为内核配置的基础文件。这里我使用了推荐的 generic 内核作为基础，你也可以使用 huge 内核的配置文件。generic 内核将更多选项建立为模块，从而减小内核映像的大小，但它通常需要使用 initrd。
 
 ```
 darkstar:/mnt/cdrom/kernels# cp generic.s/config /usr/src/linux/.config
@@ -41,7 +41,7 @@ darkstar:/mnt/cdrom/kernels# cp generic.s/config /usr/src/linux/.config
 
 如果你想把当前运行的内核的配置文件作为基础配置文件，你可以在`/proc/config.gz`里面找到它。这是一个特殊的内核相关的文件，其中包括以压缩格式保存的整个内核配置，并要求你的内核支持它。
 
-```bash
+```
     darkstar:~# zcat /proc/config.gz > /usr/src/linux/.config
 ```
 
@@ -66,9 +66,9 @@ Ext3 journalling file system support (EXT3_FS) [M/n/y/?] m
 The Extended 4 (ext4) filesystem (EXT4_FS) [N/m/y/?] (NEW) m
 ```
 
-从上面你可以看到，我正在编译的内核新增了对ext4的支持`oldconfig`已经按照我原先的配置进行设置了，保留了所有旧选项的设置，仅仅让我对新增的选项进行配置。通常这可以不用选择默认选项，但是你可能希望改变它们。`oldconfig`可以方便的只显示给你新增的选项，非常适合那些只是想尝试最新版内核的用户。
+从上面你可以看到，我正在编译的内核新增了对 ext4 的支持`oldconfig`已经按照我原先的配置进行设置了，保留了所有旧选项的设置，仅仅让我对新增的选项进行配置。通常这可以不用选择默认选项，但是你可能希望改变它们。`oldconfig`可以方便的只显示给你新增的选项，非常适合那些只是想尝试最新版内核的用户。
 
-对于更细致的配置任务，我们也有多种选项。 Linux内核可以通过三种主要方式进行配置。第一个是`config`，将逐一显示每个选项让你进行配置。这是这个过程实在过于冗长，几乎已经没有人使用它了。
+对于更细致的配置任务，我们也有多种选项。 Linux 内核可以通过三种主要方式进行配置。第一个是`config`，将逐一显示每个选项让你进行配置。这是这个过程实在过于冗长，几乎已经没有人使用它了。
 
 ```
 darkstar:/usr/src/linux# make config
@@ -85,15 +85,15 @@ Automatically append version information to the version string (LOCALVERSION_AUT
 Support for paging of anonymous memory (swap) (SWAP) [Y/n/?]
 ```
 
-幸好我们还有两种更简单的方法来配置内核，它们就是`menuconfig`和`xconfig`。这两种方式都会创建一个菜单程序，允许您选择和取消选择选项，而不必逐一进行选择。`menuconfig的`是最常用的方法，而且我也推荐这种方法。`xconfig`仅在当您试图使用一个图形用户界面在X上编译内核时才会有用。它们两个非常相似，但我们这里只会介绍`menuconfig`。
+幸好我们还有两种更简单的方法来配置内核，它们就是`menuconfig`和`xconfig`。这两种方式都会创建一个菜单程序，允许您选择和取消选择选项，而不必逐一进行选择。`menuconfig的`是最常用的方法，而且我也推荐这种方法。`xconfig`仅在当您试图使用一个图形用户界面在 X 上编译内核时才会有用。它们两个非常相似，但我们这里只会介绍`menuconfig`。
 
 在终端上运行`make menuconfig`就会出现下面的菜单界面。每个内核部分都有自己的子菜单，您可以用方向键进行选择。
 
-![make-menuconfig-w.png](https://raw.githubusercontent.com/slackwarecn/slackbook_cn/master/img/make-menuconfig-w.png)
+![make-menuconfig-w.png](../img/make-menuconfig-w.png)
 
 > 警告：
 >
-> 如果您在编译内核和Slackware软件仓库里的内核版本相同，你必须选择“Local version”选项。这个选项可以在“General setup”子菜单中找到。如果不设置这将导致你的内核编译的模块覆盖slackware你从仓库安装的内核的模块。这将很快导致你的系统无法引导。
+> 如果您在编译内核和 Slackware 软件仓库里的内核版本相同，你必须选择“Local version”选项。这个选项可以在“General setup”子菜单中找到。如果不设置这将导致你的内核编译的模块覆盖 slackware 你从仓库安装的内核的模块。这将很快导致你的系统无法引导。
 
 一旦你已经配置好了内核，那么你就该进行编译了。有很多方法进行编译，但是最可靠的使用`bzimage`参数。当你一旦开始通过这个参数进行`make`，内核就会开始进行编译，你将会看到终端上滚动许多信息，知道内核编译完成或者遇到了一个致命错误。
 
@@ -130,5 +130,4 @@ darkstar:/usr/src/linux# cat arch/x86/boot/bzImage > /boot/vmlinuz-release_numbe
 darkstar:/usr/src/linux# make modules_install
 ```
 
-一旦完成上述步骤，你的`/boot`目录下就会有一个新内核，并且`/lib/modules`目录下会有新内核的模块。为了使用这个新内核，你需要编辑`lilo.conf`文件，为他创建一个initrd（仅在你需要在开机时加载一个或多个这个内核的模块），然后运行`lilo`进行更新。当你重启时，如果一切按计划顺利进行，你就会看到一个使用你新编译的内核启动的选项。如果出现了什么问题，你可能花费需要一些时间来修复。
-
+一旦完成上述步骤，你的`/boot`目录下就会有一个新内核，并且`/lib/modules`目录下会有新内核的模块。为了使用这个新内核，你需要编辑`lilo.conf`文件，为他创建一个 initrd（仅在你需要在开机时加载一个或多个这个内核的模块），然后运行`lilo`进行更新。当你重启时，如果一切按计划顺利进行，你就会看到一个使用你新编译的内核启动的选项。如果出现了什么问题，你可能花费需要一些时间来修复。

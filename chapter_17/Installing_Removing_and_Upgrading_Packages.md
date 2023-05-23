@@ -1,8 +1,8 @@
 ### 软件包的安装、移除和升级
 
- `pkgtool`很方便，但`installpkg(8)`更合适处理一些不常做的事，比如要安装一个单独的包，或者要安装一整个硬盘的包，又或者想用脚本控制安装过程等等。像所有的Slackware包管理工具一样， `installpkg`不会自作聪明，只会乖乖的照吩咐办事。来看看`installpkg`最基本的用法：告诉 `installpkg`要安装哪些包，它就会毫不犹豫地安装这些包。
+`pkgtool`很方便，但`installpkg(8)`更合适处理一些不常做的事，比如要安装一个单独的包，或者要安装一整个硬盘的包，又或者想用脚本控制安装过程等等。像所有的 Slackware 包管理工具一样， `installpkg`不会自作聪明，只会乖乖的照吩咐办事。来看看`installpkg`最基本的用法：告诉 `installpkg`要安装哪些包，它就会毫不犹豫地安装这些包。
 
- ```
+```
 darkstar:~# installpkg blackbox-0.70.1-i486-2.txz
 Verifying package blackbox-0.70.1-i486-2.txz.
 Installing package blackbox-0.70.1-i486-2.txz:
@@ -20,7 +20,7 @@ PACKAGE DESCRIPTION:
 Package blackbox-0.70.1-i486-2.txz installed.
 ```
 
-借助于shell通配符，还可以一下子安装很多个包。要从一个已挂载的光盘中安装所有N系列的包，只需要这么做：
+借助于 shell 通配符，还可以一下子安装很多个包。要从一个已挂载的光盘中安装所有 N 系列的包，只需要这么做：
 
 ```
 darkstar:~# installpkg /mnt/cdrom/slackware/n/*.txz
@@ -62,5 +62,4 @@ Package blackbox-0.65.0-x86_64-4 upgraded with new package
 ./blackbox-0.70.1-i486-2.txz.
 ```
 
-以上所有工具都可以添加很多有用的参数。比如，向`installpkg`添加`--root`参数可以把包安装在任何目录中。`--dry-run`参数可以命令`upgradepkg`在不对系统做任何改变的情况下显示它要做的事。更多细节请参考man手册。
-
+以上所有工具都可以添加很多有用的参数。比如，向`installpkg`添加`--root`参数可以把包安装在任何目录中。`--dry-run`参数可以命令`upgradepkg`在不对系统做任何改变的情况下显示它要做的事。更多细节请参考 man 手册。

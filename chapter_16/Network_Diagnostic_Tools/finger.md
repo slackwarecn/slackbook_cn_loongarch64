@@ -18,4 +18,3 @@ Mail forwarded to alan@lizella.net
 No mail.
 No Plan.
 ```
-

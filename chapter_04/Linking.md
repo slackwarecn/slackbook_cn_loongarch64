@@ -27,4 +27,3 @@ lrwxrwxrwx 1 root root 22 2008-01-25 04:16 foo -> /etc/slackware-version
 ```
 
 使用符号链接时，注意如果源文件被删掉了，符号链接就会失效：此时它指向一个不存在的文件。
-

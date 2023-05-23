@@ -1,23 +1,21 @@
 # ==============================================================================
-# make all/pdf/epub/mobi/clean
+# make <all|html|pdf|epub|mobi>
 # ==============================================================================
-GITBOOK = gitbook
-RM = rm
-
 TARGET = slackbook_cn
 FORMATS = pdf epub mobi
 
-.PHONY: all clean html $(FORMATS)
+.PHONY: all clean html format $(FORMATS)
 
 all: html $(FORMATS)
 
 html:
-	$(GITBOOK) build . $(TARGET)_html
+	gitbook build . $(TARGET)_html
 
 $(FORMATS):
-	$(GITBOOK) $@ . $(TARGET).$@
+	gitbook $@ . $(TARGET).$@
+
+format:
+	@prettier -wu $(shell find * -type f -name '*.md')
 
 clean:
-	-$(RM) -f $(addprefix $(TARGET)., $(FORMATS))
-	-$(RM) -rf $(TARGET)_html
-
+	rm -rf $(TARGET)_html $(addprefix $(TARGET)., $(FORMATS))

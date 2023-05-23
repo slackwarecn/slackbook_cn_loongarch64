@@ -46,4 +46,3 @@ bar_2/
 darkstar:~$ rm -fr foo_2
 darkstar:~$ ls
 ```
-
