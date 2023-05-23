@@ -1,14 +1,6 @@
 {
-  "pdf": {
-    "toc": true,
-    "pageNumbers": true,
-    "fontSize": 14,
-    "paperSize": "a4",
-    "margin": {
-      "right": 62,
-      "left": 62,
-      "top": 48,
-      "bottom": 48
-    }
-  }
+  "title": "Slackware 中文手册",
+  "author": "The Slackware Linux CN Community",
+  "description": "本书是 Slackbook 的中文版",
+  "language": "zh-hans"
 }
