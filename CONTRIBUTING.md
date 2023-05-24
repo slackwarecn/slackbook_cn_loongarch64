@@ -4,9 +4,9 @@
 
 你有三种方式可以参与 Slackbook 中文版的翻译。
 
-1. 提交[Issues][id_issues]，适合单处的翻译错误。
-2. 提交[Pull Requests][id_pull_requests]，适合较多翻译内容提交。
-3. [申请][id_joinus]成为[The Slackware Linux CN Community][id_slackwarecn] 的一员，适合长期跟进翻译工作。
+1. 提交 [Issues][id_issues]，适合单处的翻译错误。
+2. 提交 [Pull Requests][id_pull_requests]，适合较多翻译内容提交。
+3. [申请][id_joinus] 成为 [The Slackware Linux CN Community][id_slackwarecn] 的一员，适合长期跟进翻译工作。
 
 #### 原始文档
 
@@ -19,21 +19,21 @@ $ git checkout 7151c2376e05ee3a34025a24080fa283e460d7cc
 $ make
 ```
 
-或者你可以在[**这里**](http://slackbook.org/beta)在线查看原始文档。
+或者你可以在 [**这里**](http://slackbook.org/beta) 在线查看原始文档。
 
 #### 参与步骤
 
 ##### 新建 Issues
 
-你需要在[Issues][id_issues]页面查看你要翻译的章节是否有人接手，如果该章节的翻译尚未开始，你需要新建一个 Issue 来说明自己要翻译的章节。
+你需要在 [Issues][id_issues] 页面查看你要翻译的章节是否有人接手，如果该章节的翻译尚未开始，你需要新建一个 Issue 来说明自己要翻译的章节。
 
-我会尽快把项目的翻译状态更新到[项目翻译工作进展](https://github.com/slackwarecn/slackbook_cn/issues/2)页面。
+我会尽快把项目的翻译状态更新到 [项目翻译工作进展](https://github.com/slackwarecn/slackbook_cn/issues/2) 页面。
 
 ##### Pull Requests 流程
 
 ###### Fork 项目
 
-在 GitHub 上`fork`到自己的仓库，然后`clone`到本地，并设置用户信息。
+在 GitHub 上 `fork` 到自己的仓库，然后 `clone` 到本地，并设置用户信息。
 
 ```
 $ git clone https://github.com/<Your_Github_ID>/slackbook_cn.git
@@ -54,13 +54,13 @@ $ git push origin master
 
 ###### 发起 Pull Request
 
-现在你可以在你的 Github 项目页面上发起[Pull Request][id_pull_requests]。
+现在你可以在你的 Github 项目页面上发起 [Pull Request][id_pull_requests] 。
 
 ##### 组织内翻译提交流程
 
 ###### Clone 项目
 
-首先你需要`clone`项目到本地。
+首先你需要 `clone` 项目到本地。
 
 ```
 $ git clone https://github.com/slackwarecn/slackbook_cn.git
@@ -102,7 +102,7 @@ $ git push -f origin master
 
 ###### 更新上游项目
 
-如果你直接从上游`clone`下来的项目，只需要简单更新本地仓库即可。
+如果你直接从上游 `clone` 下来的项目，只需要简单更新本地仓库即可。
 
 ```
 $ git pull origin master

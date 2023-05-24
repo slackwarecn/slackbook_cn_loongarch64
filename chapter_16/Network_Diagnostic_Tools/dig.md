@@ -1,6 +1,6 @@
 #### dig
 
-`dig(1)`工具用来手动执行更复杂的 DNS 查找。当你用`dig`解决 DNS 问题时，它就会变成一只“围栏里铁面无私的小狗”（the meanest dog in the pound）。使用`dig`，你几乎可以执行任意类型的 DNS 查找，从反向查找（reverse lookups）到 A、CNAME、MX、SP、TXT 字段的查找等等。还有太多太多的命令行选项和查找类型有待深入讨论，不过 man 手册中已经列出了它们的常见用法。
+`dig(1)` 工具用来手动执行更复杂的 DNS 查找。当你用 `dig` 解决 DNS 问题时，它就会变成一只“围栏里铁面无私的小狗”（the meanest dog in the pound）。使用 `dig`，你几乎可以执行任意类型的 DNS 查找，从反向查找（reverse lookups）到 A、CNAME、MX、SP、TXT 字段的查找等等。还有太多太多的命令行选项和查找类型有待深入讨论，不过 man 手册中已经列出了它们的常见用法。
 
 ```
 darkstar:~# dig @207.69.188.185 www.slackware.com a
@@ -29,4 +29,4 @@ slackware.com.		86400	IN	NS	ns1.cwo.com.
 ;; MSG SIZE  rcvd: 105
 ```
 
-我们来看看上面用到的命令行选项。参数`@207.69.188.185`告诉`dig`要在哪个 DNS 服务器上进行查找，如果不指定，`dig`就在`/etc/resolv.conf`中列出的所有服务器上查找。末尾的参数`a`标明了要查找的 DNS 字段类型，在这个例子中我们要查找的是“A”字段包含的 IPv4 地址。
+我们来看看上面用到的命令行选项。参数 `@207.69.188.185` 告诉 `dig` 要在哪个 DNS 服务器上进行查找，如果不指定，`dig` 就在 `/etc/resolv.conf` 中列出的所有服务器上查找。末尾的参数 `a` 标明了要查找的 DNS 字段类型，在这个例子中我们要查找的是“A”字段包含的 IPv4 地址。

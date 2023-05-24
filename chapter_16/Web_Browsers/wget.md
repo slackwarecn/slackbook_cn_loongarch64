@@ -1,6 +1,6 @@
 #### wget
 
-和我们见过的浏览器不同，`wget(1)`是非交互式的（non-interactive）。对 HTTP 内容，`wget`只下载不显示，这样一来离开网页浏览器我们也可以“浏览”网页了。不像其他浏览器的 dump 模式，`wget`不对下载的网页进行格式化，它从服务器上原封不动的把带有标签（tags）和二进制数据（binary data）的网页内容复制下来。开启一些递归选项，你可以用`wget`复制整个网站到你的本地计算机中。除了 HTTP，`wget`还支持 FTP 和其他一些协议。
+和我们见过的浏览器不同，`wget(1)` 是非交互式的（non-interactive）。对 HTTP 内容，`wget` 只下载不显示，这样一来离开网页浏览器我们也可以“浏览”网页了。不像其他浏览器的 dump 模式，`wget` 不对下载的网页进行格式化，它从服务器上原封不动的把带有标签（tags）和二进制数据（binary data）的网页内容复制下来。开启一些递归选项，你可以用 `wget` 复制整个网站到你的本地计算机中。除了 HTTP，`wget` 还支持 FTP 和其他一些协议。
 
 ```
 darkstar:~# wget ftp://ftp.osuosl.org/pub/slackware/slackware-current/ChangeLog.txt
