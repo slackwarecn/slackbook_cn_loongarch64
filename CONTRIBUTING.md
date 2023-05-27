@@ -138,18 +138,18 @@ $ git pull origin master
 | 第十八章 | [Arondight][id_name_arondight] [nnnewb][id_name_nnnewb] [zha0300][id_name_zha0300]           |
 | 第十九章 | [coolrc136][id_name_coolrc136]                                                               |
 
-[id_slackwarecn]: https://github.com/slackwarecn "访问The Slackware Linux CN Community"
+[id_issues]: https://github.com/slackwarecn/slackbook_cn/issues "提交 Issues"
 [id_joinus]: http://slackwarecn.github.io/JoinUs "加入我们！"
-[id_pull_requests]: https://github.com/slackwarecn/slackbook_cn/pulls "查看Pull Requests"
-[id_issues]: https://github.com/slackwarecn/slackbook_cn/issues "提交Issues"
-[id_name_arondight]: https://github.com/Arondight
-[id_name_zhuduiyou]: https://github.com/zhuduiyou
-[id_name_coolrc136]: https://github.com/coolrc136
-[id_name_unnamed42]: https://github.com/unnamed42
-[id_name_liandesinian]: https://github.com/liandesinian
-[id_name_zha0300]: https://github.com/zha0300
-[id_name_abbycin]: https://github.com/abbycin
-[id_name_farkasity]: https://github.com/farkasity
-[id_name_cantaosir]: https://github.com/cantaosir
-[id_name_ziyudiemou]: http://tieba.baidu.com/home/main?un=%E7%B4%AB%E9%9B%A8%E8%9D%B6%E7%9C%B8&ie=utf-8&fr=pb
-[id_name_nnnewb]: https://github.com/nnnewb
+[id_name_abbycin]: https://github.com/abbycin "访问该用户主页"
+[id_name_arondight]: https://github.com/Arondight "访问该用户主页"
+[id_name_cantaosir]: https://github.com/cantaosir "访问该用户主页"
+[id_name_coolrc136]: https://github.com/coolrc136 "访问该用户主页"
+[id_name_farkasity]: https://github.com/farkasity "访问该用户主页"
+[id_name_liandesinian]: https://github.com/liandesinian "访问该用户主页"
+[id_name_nnnewb]: https://github.com/nnnewb "访问该用户主页"
+[id_name_unnamed42]: https://github.com/unnamed42 "访问该用户主页"
+[id_name_zha0300]: https://github.com/zha0300 "访问该用户主页"
+[id_name_zhuduiyou]: https://github.com/zhuduiyou "访问该用户主页"
+[id_name_ziyudiemou]: http://tieba.baidu.com/home/main?un=%E7%B4%AB%E9%9B%A8%E8%9D%B6%E7%9C%B8&ie=utf-8&fr=pb "访问该用户主页"
+[id_pull_requests]: https://github.com/slackwarecn/slackbook_cn/pulls "查看 Pull Requests"
+[id_slackwarecn]: https://github.com/slackwarecn "访问 The Slackware Linux CN Community"

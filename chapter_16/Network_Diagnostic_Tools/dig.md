@@ -1,6 +1,6 @@
 #### dig
 
-`dig(1)` 工具用来手动执行更复杂的 DNS 查找。当你用 `dig` 解决 DNS 问题时，它就会变成一只“围栏里铁面无私的小狗”（the meanest dog in the pound）。使用 `dig`，你几乎可以执行任意类型的 DNS 查找，从反向查找（reverse lookups）到 A、CNAME、MX、SP、TXT 字段的查找等等。还有太多太多的命令行选项和查找类型有待深入讨论，不过 man 手册中已经列出了它们的常见用法。
+`dig(1)` 工具用来手动执行更复杂的 DNS 查找。当你用 `dig` 解决 DNS 问题时，它就会变成一只“围栏里铁面无私的小狗”（the meanest dog in the pound）。使用 `dig`，你几乎可以执行任意类型的 DNS 查找，从反向查找（reverse lookups）到 _A_、_CNAME_、_MX_、_SP_、_TXT_ 字段的查找等等。还有太多太多的命令行选项和查找类型有待深入讨论，不过 man 手册中已经列出了它们的常见用法。
 
 ```
 darkstar:~# dig @207.69.188.185 www.slackware.com a
