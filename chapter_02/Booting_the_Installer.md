@@ -1,11 +1,11 @@
 ### 从安装介质启动
 
-从安装介质启动意味着将 Slackware 的光盘放入光驱中然后启动。你可能需要进入 BIOS 然后选择从光驱启动。一些厂商允许你在启动界面按特殊的按键进入启动选项的选择（例如 `F12`）。因为不同的厂商这个特殊的按键是不一样的，所以在这里没有办法统一说明，但是方法都是一样的。
+从安装介质启动意味着将 Slackware 的光盘放入光驱中然后启动。你可能需要进入 UEFI BIOS 然后选择从光驱启动。一些厂商允许你在启动界面按特殊的按键进入启动选项的选择（例如 `F2`）。因为不同的厂商这个特殊的按键是不一样的，所以在这里没有办法统一说明，但是方法都是一样的。
 
 一旦你的电脑从光驱启动，你会看到屏幕上会让你输入一些特殊的内核参数。这里是允许你进入急救模式的。某些系统可能需要特殊的内核参数才能引导，不过这是极少数的情况。大部分的用户可以直接输入回车键进入引导。
 
 ```
-Welcome to Slackware version 14.0 (Linux kernel 3.2.27)!
+Welcome to Slackware version 15.1 (Linux kernel 6.3.0)!
 
 If you need to pass extra parameters to the kernel, enter them at the prompt
 below after the name of the kernel to boot (huge.s etc).
@@ -33,7 +33,7 @@ Enter 1 to select a keyboard map: _
 输入 `1` 然后按回车键会获得一个键盘映射列表以此来选择其他键盘形式。通常情况下直接按回车键继续就行了。
 
 ```
-   Welcome to the Slackware Linux installation disk! (version 14.0)
+   Welcome to the Slackware Linux installation disk! (version 15.1)
 
    ######  IMPORTANT!  READ THE INFORMATION BELOW CAREFULLY.  ######
 
