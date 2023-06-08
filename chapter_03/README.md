@@ -3,7 +3,9 @@
 ### 本章目录
 
 - [mkinitrd](mkinitrd.md)
-- [LILO](LILO.md)
+- [引导器](chapter_03/Boot_loader/README.md)
+  - [LILO](chapter_03/Boot_loader/LILO.md)
+  - [GRUB2](chapter_03/Boot_loader/GRUB2.md)
 - [多重引导](Dual_Booting/README.md)
   - [引导多个分区](Dual_Booting/Dual_Booting_with_Partitions.md)
   - [引导多个硬盘](Dual_Booting/Dual_Booting_from_Hard_Drives.md)
