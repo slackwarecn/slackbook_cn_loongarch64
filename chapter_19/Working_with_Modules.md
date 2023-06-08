@@ -7,14 +7,16 @@
 那么，我们该如何知道什么模块当前加载我们的计算机上以及我们如何加载和卸载它们？幸运的是我们拥有一套完整的处理这个问题的工具。正如你可能已经猜到的那样，列出模块的工具是 `lsmod` 。
 
 ```
-darkstar:~# lsmod
+root@slackwarecn:~# lsmod
 Module                  Size  Used by
-nls_utf8                1952  1
-cifs                  240600  2
-i915                  168584  2
-drm                   168128  3 i915
-i2c_algo_bit            6468  1 i915
-tun                    12740  1
+cfg80211              458399  0
+8021q                  28415  0
+garp                    9059  1 8021q
+stp                     2997  1 garp
+mrp                    11318  1 8021q
+llc                     7021  2 stp,garp
+rfkill                 27245  1 cfg80211
+efivarfs               14057  1
 ... many more lines ommitted ...
 ```
 
@@ -23,21 +25,17 @@ tun                    12740  1
 我们有两个负责加载模块的应用程序：`insmod` 和 `modprobe` 。它们两个都可以加载模块并且报告任何错误（例如加载了一个系统中不存在的设备的模块），但我们首选 `modprobe`，因为它可以加载任何模块的依赖关系。这两个应用程序中的任何一个都可以被直接使用。
 
 ```
-darkstar:~# insmod ext3
-darkstar:~# modprobe ext4
-darkstar:~# lsmod | grep ext
-ext4                  239928  1
-jbd2                   59088  1 ext4
-crc16                   1984  1 ext4
-ext3                  139408  0
-jbd                    48520  1 ext3
-mbcache                 8068  2 ext4,ext3
+root@slackwarecn:~# insmod /lib/modules/6.3.0/kernel/fs/fat/fat.ko
+root@slackwarecn:~# modprobe vfat
+root@slackwarecn:~# lsmod |grep fat
+vfat                   13779  0
+fat                    74203  1 vfat
 ```
 
 移除一个模块是一个棘手的过程，这里我们也有两个工具来移除模块：`rmmod` 和 `modprobe` 。使用 `modprobe` 的 `-r` 参数可以移除一个模块。
 
 ```
-darkstar:~# rmmod ext3
-darkstar:~# modprobe -r ext4
-darkstar:~# lsmod | grep ext
+root@slackwarecn:~# rmmod vfat
+root@slackwarecn:~# modprobe -r fat
+root@slackwarecn:~# lsmod |grep fat
 ```
