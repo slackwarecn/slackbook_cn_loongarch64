@@ -1,7 +1,7 @@
 # ==============================================================================
 # make <all|html|pdf|epub|mobi>
 # ==============================================================================
-TARGET = slackbook_cn
+TARGET = slackbook_cn_loongarch64
 FORMATS = pdf epub mobi
 
 .PHONY: all clean html format $(FORMATS)
