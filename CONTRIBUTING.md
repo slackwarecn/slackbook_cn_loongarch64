@@ -119,8 +119,8 @@ $ git pull origin master
 | 翻译框架 | [Arondight][id_name_arondight]                                                               |
 | 前言     | [Arondight][id_name_arondight] [zhuduiyou][id_name_zhuduiyou] [紫雨蝶眸][id_name_ziyudiemou] |
 | 第一章   | [zhuduiyou][id_name_zhuduiyou] [紫雨蝶眸][id_name_ziyudiemou]                                |
-| 第二章   | [liandesinian][id_name_liandesinian] [紫雨蝶眸][id_name_ziyudiemou]                          |
-| 第三章   | [unnamed42][id_name_unnamed42]                                                               |
+| 第二章   | [liandesinian][id_name_liandesinian] [紫雨蝶眸][id_name_ziyudiemou] [shipujin][id_name_shipujin] |
+| 第三章   | [unnamed42][id_name_unnamed42] [shipujin][id_name_shipujin]                                  |
 | 第四章   | [abbycin][id_name_abbycin] [unnamed42][id_name_unnamed42]                                    |
 | 第五章   | [liandesinian][id_name_liandesinian]                                                         |
 | 第六章   | [farkasity][id_name_farkasity]                                                               |
@@ -136,7 +136,7 @@ $ git pull origin master
 | 第十六章 | [zhuduiyou][id_name_zhuduiyou]                                                               |
 | 第十七章 | [zhuduiyou][id_name_zhuduiyou] [紫雨蝶眸][id_name_ziyudiemou]                                |
 | 第十八章 | [Arondight][id_name_arondight] [nnnewb][id_name_nnnewb] [zha0300][id_name_zha0300]           |
-| 第十九章 | [coolrc136][id_name_coolrc136]                                                               |
+| 第十九章 | [coolrc136][id_name_coolrc136] [shipujin][id_name_shipujin]                                  |
 
 [id_issues]: https://github.com/slackwarecn/slackbook_cn/issues "提交 Issues"
 [id_joinus]: http://slackwarecn.github.io/JoinUs "加入我们！"
@@ -147,6 +147,7 @@ $ git pull origin master
 [id_name_farkasity]: https://github.com/farkasity "访问该用户主页"
 [id_name_liandesinian]: https://github.com/liandesinian "访问该用户主页"
 [id_name_nnnewb]: https://github.com/nnnewb "访问该用户主页"
+[id_name_shipujin]: https://github.com/shipujin "访问该用户主页"
 [id_name_unnamed42]: https://github.com/unnamed42 "访问该用户主页"
 [id_name_zha0300]: https://github.com/zha0300 "访问该用户主页"
 [id_name_zhuduiyou]: https://github.com/zhuduiyou "访问该用户主页"
